@@ -1,0 +1,37 @@
+# https://rasa.com/docs/rasa/tuning-your-model/
+# Uses pre-trained BERT language model (not fine-tuned)
+
+pipeline:
+  - name: LanguageModelTokenizer
+  - name: LanguageModelFeaturizer
+    # Name of the language model to use
+    model_name: "bert"
+    # Pre-Trained weights to be loaded
+    model_weights: "rasa/LaBSE"
+
+    # An optional path to a specific directory to download and cache the pre-trained model weights.
+    # The `default` cache_dir is the same as https://huggingface.co/transformers/serialization.html#cache-directory .
+    cache_dir: null
+  - name: DIETClassifier
+    epochs: 100
+    # constrain_similarities: True
+    # model_confidence: linear_norm
+  - name: EntitySynonymMapper
+  - name: ResponseSelector
+    epochs: 100
+    retrieval_intent: faq   # Added
+    # constrain_similarities: True
+    # model_confidence: linear_norm
+  # - name: FallbackClassifier
+  #   threshold: 0.3
+  #   ambiguity_threshold: 0.1
+
+# language: en
+# pipeline:
+# - name: HFTransformersNLP
+# model_weights: "bert-base-uncased"
+# model_name: "bert"
+# - name: LanguageModelTokenizer
+# - name: LanguageModelFeaturizer
+# - name: DIETClassifier
+# epochs: 100

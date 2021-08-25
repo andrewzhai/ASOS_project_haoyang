@@ -1,0 +1,1666 @@
+version: '2.0'
+nlu:
+- intent: faq_fur
+  examples: |
+    -  Is your fur fake or real?
+    -  I have a question about fur.
+    -  Is the fur in this item real?
+    -  I was wondering if you make any products
+    -  What kind of fur is your jacket?
+    -  Is your fur real fur?
+    -  I just noticed that this jacket contains fur
+    -  Are your coats real fur?
+    -  Do you have any real fur products?
+    -  What kind of fur is your fur products made of?
+    -  Is fur used in your products?
+    -  Is the fur used in this product real?
+    -  Do your products contain real fur?
+    -  What kind of fur is it?
+    -  Is all your fur vegan?
+    -  What kind of fur is used in your products?
+    -  Is fur used in your products real?
+    -  Is the fur on your products
+    -  are your products made with real animal fur?
+    -  Is the fur used in your products from real animals?
+    -  Do you sell real fur?
+    -  What kind of fur do you use
+    -  Is the fur in this product real?
+    -  Is all of your fur faux?
+    -  Is your fur fake or
+    -  do you use real fur?
+    -  Is the fur from a real animal?
+    -  Does your product contain real fur?
+    -  What kind of fur do you use?
+    -  Is the fur on your products real
+    -  Does this product contain real fur?
+    -  Is the fur on your products fake?
+    -  Do you use real fur?
+    -  I'm curious to know if your fur is real or fake?
+    -  Is the fur that you use on your beanie hats real?
+    -  Is the fur on your products from real animals?
+    -  Is the fur in your products fake?
+    -  Are your products made with real fur?
+    -  Is your fur real or fake?
+    -  Is your fur faux fur?
+    -  Is the fur on your product fake or real?
+    -  Are your products fake fur?
+    -  '''On queries of animal rights:'''
+    -  Can you tell me if the fur for the products sold by ASOS is fake or real?
+    -  Are your products made from real fur?
+    -  Is the fur on your products real or fake?
+    -  Are your products made of real fur?
+    -  Is your product real fur?
+    -  is the fur real or fake?
+    -  Is the fur real or fake?
+- intent: faq_delivery_slot
+  examples: |
+    -  Can you deliver my parcel to an address in a specific area?
+    -  My parcel has been sent back to sender
+    -  My parcel was stolen off my doorstep, can you help me?
+    -  I need my parcel to arrive before a specific date (International)
+    -  I am going on holiday on a specific date, can you deliver my parcel on that date and at a specific time?
+    -  Can you deliver my parcel on a specific date? (International)
+    -  Can you deliver my parcel to a specific address on a specific date and time?
+    -  Thank you for taking the time to read my blog post on the Customer Care team at ASOS, please do
+    -  Can you deliver my parcel to my
+    -  Can you deliver to an address that is not my home address and not require a signature?
+    -  Can you deliver my parcel on a specific day and a specific time?
+    -  Can you deliver to an address that is not my home address?
+    -  Can you deliver my parcel on a specific date (UK) Can you deliver my parcel on a specific date (International)
+    -  I need my parcel before a specific date
+    -  Can you deliver my parcel on a specific date and time? (International)
+    -  I have just received my parcel and it is incorrect, can you send me the correct item?
+    -  I need my parcel for collection on a specific date and time
+    -  Can you deliver my parcel on
+    -  Can you deliver my parcel to a specific post office?
+    -  I will be out of the country on delivery date, can you deliver on another date?
+    -  Can you deliver my parcel to a specific address?
+    -  I can't make it to the collection point, can you deliver my parcel to a neighbour?
+    -  Can you deliver my parcel to a specific address on a specific day?
+    -  Can you deliver my parcel on a specific date and at a specific time?
+    -  Can you deliver my parcel on a specific day by a specific time?
+    -  I need my parcel to arrive before a specific date (UK)
+    -  Can you deliver my parcel to a specific location?
+    -  Can you deliver my parcel on bank holiday?
+    -  Can you deliver my parcel on a specific date and time and leave a card?
+    -  Can I change the delivery address?
+    -  I want to track my parcel
+    -  Can you deliver my parcel on a specific day and time?
+    -  Can you deliver my parcel on a specific date and time and leave it with a neighbour?
+    -  Can you deliver my parcel on a specific day
+    -  Can you deliver my parcel to an
+    -  I need my parcel to be delivered on a specific date before 3pm
+    -  I need my parcel for collection on a specific day
+    -  I need my parcel to arrive before the weekend, can you deliver on a specific date?
+    -  My parcel has arrived but was damaged, can you help me?
+    -  I need my parcel to arrive before the weekend and I'm not available to receive it, can you leave it with a
+    -  Can you deliver my parcel on a specific date and time (UK)
+    -  I need my parcel to arrive within a certain time frame
+    -  Can you deliver my parcel next week (UK)?
+    -  I can't be home on delivery date, can you deliver my parcel on another date?
+    -  Can you deliver my parcel to my local post office?
+    -  I will not be at home on delivery date, can you deliver my parcel on another date?
+    -  I need my parcel to arrive before a specific date
+    -  Can you deliver my parcel to my work?
+    -  Can you deliver my parcel on a specific time and date?
+    -  My parcel is stuck with customs, can you help me?
+- intent: faq_delivery_address
+  examples: |
+    -  I want to ship my order to my friends house
+    -  I want to ship my order to my aunt's address
+    -  My address is wrong in my account, how can I change it?
+    -  I want to ship my order to my
+    -  Can you ship my order to my house?
+    -  I want to ship my order to my ex-boyfriend's house
+    -  I want to change my address
+    -  I want to ship your parcel to my work address
+    -  I want to ship my order to my mother's address
+    -  I want to ship my order to my sisters house
+    -  I want to ship my order to my workplace
+    -  Can I add my address to my order so that I can have it delivered there instead?
+    -  I want to ship my order to
+    -  How do I change my address?
+    -  I want to ship my order to my boyfriend's house
+    -  I want to ship my order to my neighbour
+    -  Your order failed to arrive and you want to change your delivery address
+    -  I want to ship my order to someone else's address
+    -  I want to ship my order to my office
+    -  I want to ship to a different address
+    -  I want to ship my order to my best friend's address
+    -  I want to change the delivery address
+    -  I want to ship my order to my grandmother's house
+    -  I want to ship my order to my grandmother's address
+    -  I want to ship my order to my flat mate's address
+    -  I want to ship my order to my address abroad for
+    -  I want to ship my order to my house
+    -  How do I change my delivery address?
+    -  I want to ship my order to my work
+    -  I want to ship my order
+    -  I want to ship my order to my sister's address
+    -  I want to ship my order to a different address
+    -  I want to ship my order to my boyfriend's place
+    -  I want to ship to my sister's house
+    -  I want to ship my order to my boyfriends house
+    -  I want to ship my order to my university address
+    -  I want to ship my order to my sisters address
+    -  I want to change the address for my order
+    -  The following are various examples of customer queries sent to the Customer Care
+    -  Please ship my order to my friends address
+    -  I want to ship my order to my cousin's address
+    -  I want to ship your items to my friend's address in the US
+    -  I have changed my delivery address. How do I update my billing address?
+    -  I want my order shipped to my friends address
+    -  I want to ship my order to another address
+    -  Please could you change my delivery address
+    -  I want to ship my order to my friend's address
+    -  I want to have my order shipped to another address
+    -  I want to ship my order to my boyfriend's address
+    -  I want to ship my order to my boyfriend
+- intent: faq_return_prohibited_items
+  examples: |
+    -  I would like to return this perfume as it has leaked
+    -  I bought this perfume in the sale and it's not right
+    -  I'm not happy with this perfume. Can I return it?
+    -  Can I return these perfumes?
+    -  I bought this gift for my sister but she's not keen on it so can I return it?
+    -  I don't like this perfume
+    -  I bought a perfume and it's not quite right can I send it back?
+    -  I am not happy with this perfume, can I send it back?
+    -  I'm not happy with my purchase of the perfume can I return it?
+    -  I received a perfume as a gift for Christmas and I don't
+    -  I don't like this perfume can I send it .?
+    -  I don't like this perfume can I send it back
+    -  I'd like to return this perfume for a refund
+    -  I sniffed this perfume and I don't like it can I send it back
+    -  I bought a perfume and it is not working properly
+    -  I bought this perfume and its gone off can I return it?
+    -  '''The following are various examples of customer queries sent to the Customer Care team at Tesco:'''
+    -  Please can I return this perfume?
+    -  I am not happy with this perfume, can
+    -  I can't get the lid off this perfume, can I return it?
+    -  I bought a perfume with an offer of three freebies and I don't like them can I return them?
+    -  It is a gift, so can I return it?
+    -  I don't like the perfume I bought with the offer of three freebies can I send it back?
+    -  I'm not happy with this perfume
+    -  I'd like to return this perfume as
+    -  I don't like this perfume can I send it back?
+    -  I bought this perfume yesterday and it's already gone off
+    -  I don't like this perfume can I
+    -  I bought a perfume but I don't like it can I return it?
+    -  I want to return this perfume as I don't like the smell
+    -  I bought this perfume on a promotion of buy two get one free, I have opened the two and I don't like the third perfume so can I send it back?
+    -  I'd like to return this perfume as it is faulty
+    -  I bought this perfume but I don't like
+    -  I don't like this perfume can
+    -  I made a purchase with a three freebie offer and I don't like the freebies what can I do?
+    -  I bought an expensive perfume and it has gone off can I return it?
+    -  I sent this perfume back to you and you have not refunded me
+    -  Can I return this perfume as it is not as described?
+    -  I bought this perfume with an offer of three freebies and I don't like the freebies can I return them?
+    -  I'm not happy with my purchase of perfume I'd like to return it.
+    -  I want to return this perfume as I don't like the
+    -  I am not happy with this perfume and want to return it
+    -  Can I return this perfume?
+    -  I'd like to return this perfume and get a refund
+    -  I'd like to return this perfume as it doesn't smell like the one I ordered.
+    -  I don't like this perfume, can I return
+    -  I love this perfume and
+    -  Can I return this perfume it doesn't smell the way it did when I bought it?
+    -  I bought a perfume and it arrived with a broken lid, can I return it?
+    -  I don't like this perfume, can I send it back?
+- intent: faq_exchange_item
+  examples: |
+    -  I would like to return the item and exchange for a different
+    -  I would like to return my item because it does not fit
+    -  I would like to change my order to a different size
+    -  I have received the item but it is faulty
+    -  I want to exchange a different size
+    -  I would like to change the item
+    -  I want to return the item for a different size
+    -  I would like to return the
+    -  I would like to return and replace my item
+    -  I would like to cancel my order and make a new order
+    -  I would like to return my item and exchange
+    -  I would like to return my item and swap for a different style
+    -  I would like to swap my item for a different size
+    -  I would like to exchange my item for a different style
+    -  I want to get a refund for an item
+    -  Can I exchange my item for a different size?
+    -  Can I exchange my item for a different colour?
+    -  I Would Like To Return My Item And Exchange For A Different Size
+    -  I would like to return my items for a refund
+    -  I have returned an item twice but have not received a refund
+    -  I would like to return the item and exchange for a different style
+    -  I would like to return my item and swap for a different size
+    -  I want to exchange my item for a
+    -  I would like to return the item and exchange for a
+    -  I would like to exchange my item
+    -  I would like to return the item and swap for a different style
+    -  I would like to cancel my order
+    -  I would like to exchange my item for a different colour
+    -  I want to return my item and change for a different style
+    -  I would like to change my order
+    -  I would like to return my item and exchange to
+    -  I would like to return and exchange my item for a different size
+    -  I want to return and exchange my item
+    -  I would like to return my item for a different size
+    -  I would like to return my item and exchange for a different colour
+    -  I would like to return my item and exchange for a different size
+    -  I want to return my item for a different size
+    -  I would like to return and exchange for a different size
+    -  I would like to exchange my item for a different product
+    -  I would like to return/exchange for a different size
+    -  I would like to exchange for a different size
+    -  I would like to change the item for a different size
+    -  I want to exchange my item for a different size
+    -  I am unhappy with the item I received and would like to change it for a different style
+    -  I would like to return my item for
+    -  I would like to return this item and exchange for a different size
+    -  I want to return my item and exchange for a different size
+    -  I want to return my item
+    -  I would like to return my item as it is faulty
+    -  I would like to return my item because it is faulty
+- intent: faq_return_multiple_orders
+  examples: |
+    -  Is it OK to send two orders back in one parcel?
+    -  Can I combine multiple returns in one parcel?
+    -  Can I send more than one item back in one parcel?
+    -  Can I return more than one order in one parcel?
+    -  Is it OK to send multiple returns in one parcel?
+    -  I have a number of items
+    -  Can I return more than one item at once?
+    -  Can I send multiple items back in one bag?
+    -  Is it OK to combine multiple returns in one parcel?
+    -  Can I send multiple returns
+    -  Why you cannot combine multiple
+    -  Do you combine all of my returns in one parcel?
+    -  Can I combine my returns into one parcel?
+    -  Is it OK to send multiple orders back in one parcel?
+    -  Can I send multiple orders in one bag?
+    -  Can I have two returns in the same parcel?
+    -  Can I send more than one order back in one bag?
+    -  Can I send multiple returns back in one bag?
+    -  Can you combine multiple orders?
+    -  Do you accept multiple returns in one parcel?
+    -  Can I return multiple orders in
+    -  Can multiple orders be returned in one parcel?
+    -  I have multiple returns, can I combine them all in one parcel?
+    -  Can I send multiple items in one parcel?
+    -  '''All of the above queries are answered by the following statement from ASOS: "Once an item has been delivered to our Returns centre it is not possible to send it back to the original store for a refund. For this reason, we do not accept returns on items that have been purchased in store."'''
+    -  When sending items in the same parcel, should they all be listed on the same invoice?
+    -  I have multiple returns, can I combine them all in the same parcel?
+    -  Can I return multiple orders in one parcel?
+    -  Can I combine multiple returns?
+    -  Can I return multiple orders in one bag?
+    -  Can I send more than one returns in one parcel?
+    -  Can I return more than one order in the same bag?
+    -  The answer to all of these is (and will always be), NO.
+    -  Can I return multiple items in the same parcel?
+    -  Is it safe to return multiple
+    -  Can we return multiple orders in the same parcel?
+    -  Can I return more than one item in one bag?
+    -  Can I send several returns together?
+    -  Can you send more than one return in one parcel?
+    -  We can confirm that it is possible to return multiple orders in one parcel, as long as the combined value of these items is less than the value of the next tier of delivery.
+    -  Is it OK to return multiple orders in one parcel?
+    -  Can I ship multiple orders back in the same parcel?
+    -  Can I send multiple orders back in one bag?
+    -  Can I send back multiple orders in one parcel?
+    -  Can I send more than one order back in one parcel?
+    -  Is it ok to combine orders?
+    -  Please read the following article carefully to find out the reasons why we do not allow this.
+    -  Can I send multiple orders back in one parcel?
+    -  Can I send multiple orders back in one
+    -  Is it possible to combine multiple orders?
+- intent: faq_track_delivery
+  examples: |
+    -  When will I receive my purchase?
+    -  When will I receive my package?
+    -  When will my order arrive?
+    -  ASOS was not able to comply with the section 13(1)(b) defence to copyright infringement, as it failed to show that it had made a diligent search to locate the authors of
+    -  Where is my order tracking?
+    -  How can I see where my order is?
+    -  How will my order be delivered?
+    -  When will my order be dispatched?
+    -  What is my order tracking number?
+    -  How do I find out where my order is?
+    -  I have not received a tracking number for my order?
+    -  How do I know when my order has been dispatched?
+    -  When will my purchase be delivered?
+    -  '"Track purchase \u2013 This allows the customer to track an order by entering their\ \ email address"'
+    -  When will I get my order?
+    -  Why does my order say it's been returned?
+    -  Why is my order delayed?
+    -  When will my order be sent?
+    -  What time will my purchase be delivered?
+    -  What's the delivery status of my order?
+    -  What is my order tracking?
+    -  When is my order arriving?
+    -  How can I get updates on my order?
+    -  Why hasn't my order arrived?
+    -  How long does it take to get my package?
+    -  What time will my parcel arrive?
+    -  I need to track my order?
+    -  When will my order get here?
+    -  Why is my order taking so long?
+    -  When did my order arrive?
+    -  When will I receive my order?
+    -  Can I track my order?
+    -  When will my parcel arrive?
+    -  How do you ship orders?
+    -  When will my package be shipped?
+    -  You are welcome to use these example queries in your own customer support campaigns. Click here to see the full list of queries.
+    -  When will my item be delivered?
+    -  What is your returns policy?
+    -  What is the status of my order?
+    -  '''The Customer Care team at ASOS deal with the following queries:'''
+    -  Where can I track my order?
+    -  '''Websites such as the ASOS customer service number have been known to be very helpful to callers, as they are able to answer a variety of questions, such as:'''
+    -  When will I get my refund?
+    -  How can I track my
+    -  What time will my order arrive?
+    -  How do I find out if my purchase has been shipped?
+    -  How do I get my refund?
+    -  When will my package arrive?
+    -  How do I track my purchase?
+    -  ASOS (UK) Ltd v British Sky Broadcasting Ltd [2011] EWHC 2456 (Ch)
+- intent: faq_enquire_premier
+  examples: |
+    -  Can I get free delivery on a Marketplace purchase?
+    -  Can I get a refund for my order with premier?
+    -  Can I have my Premier delivery to a City Link store?
+    -  How long does it take for my order to arrive with free standard?
+    -  What happens if my items are returned with premier?
+    -  How do I update my delivery details with premier?
+    -  Is there a limit on how many items I can order with premier?
+    -  Can I have my items delivered on a specific day with premier?
+    -  I am a premier customer and I still haven't received my order, what should I do?
+    -  How do I get an invoice with my order?
+    -  I am a premier customer but I only want my order to be delivered next day, can you do this?
+    -  Am I guaranteed next day delivery if I
+    -  Why can't I get premier delivery for my whole order?
+    -  I am a premier customer but I
+    -  What happens if my items are damaged with premier?
+    -  How do I get a refund for my premier delivery?
+    -  I am a premier customer will
+    -  What is the premier delivery timescale?
+    -  How long will it take my
+    -  Are my items insured if I am a premier customer?
+    -  However, these queries can be interpreted as a positive for ASOS as they indicate that a customer is willing to pay for premier service and is therefore more likely to make a purchase with the retailer.
+    -  Why can't I use premier for ASOS Marketplace purchases?
+    -  Can I use my premier discount code on items that are already on sale?
+    -  How can I track my order with premier?
+    -  When does my premier delivery order go out for delivery?
+    -  '''The following are various examples of customer queries sent to the Customer Care team at River Island:'''
+    -  I am a premier customer and my order hasn't arrived, what should I do?
+    -  I am a free standard customer but I have not received my discount
+    -  Can I get my money back from a premier delivery?
+    -  How do I return items with premier?
+    -  How will I know when my order will arrive with premier?
+    -  Is there a fee for using premier?
+    -  How long does it take for my order to arrive with super saver?
+    -  Can I change my premier delivery address?
+    -  I am a premier customer
+    -  How long does it take for my order to arrive with standard delivery?
+    -  I am a premier customer but I have not received my order?
+    -  Can I have my items delivered on a specific date with premier?
+    -  Why are there delivery restrictions with premier?
+    -  How do I cancel my premier delivery?
+    -  Can I select a specific delivery date for my premier delivery?
+    -  How do I redeem my premier delivery discount?
+    -  I am a premier customer but I have not received my premier discount code?
+    -  How long does it take for my order to arrive with next day delivery?
+    -  Can I have my Premier delivery to a Post Office?
+    -  What happens if my items don't arrive in time with premier?
+    -  I have a promotional code for premier but I am not a premier customer so why can't I use it?
+    -  My order was delivered to the wrong address with premier, how can I get it back?
+    -  Can I cancel my premier delivery
+    -  Can I use my discount code with premier?
+- intent: faq_responsible_shopping
+  examples: |
+    -  Do you source sustainable fashion?
+    -  What is your policy on animal testing?
+    -  If you have received any
+    -  Why are you asking me for more and more data?
+    -  Why won't ASOS use recycled plastic in their packaging?
+    -  Why are you still using plastic and polyester?
+    -  How long do you keep my data?
+    -  Why is your packaging made of plastic?
+    -  What are ASOS doing to reduce their environmental impact?
+    -  What should I do with my old textiles?
+    -  Why is it taking so
+    -  What are ASOS doing to ensure that the products are made in humane conditions by workers that are adequately protected?
+    -  Can I return my items to your physical
+    -  How can I recycle my ASOS packaging?
+    -  Can you recycle my ASOS packaging?
+    -  Do you have a sustainable fashion policy?
+    -  What are alternatives to plastic packaging?
+    -  Do you donate money to charity?
+    -  I've received the wrong item, what should I do?
+    -  Are you concerned about the environmental impacts of your business?
+    -  How do you dispose of your old garments?
+    -  How do you dispose of your old textiles?
+    -  Can I return my unwanted items to your stores for a refund?
+    -  How can I be sure that my polyester is ethically sourced?
+    -  Do you accept international returns?
+    -  How do you deal with unsold clothing?
+    -  Why can't I return my item to a store?
+    -  Why don't you have organic cotton?
+    -  Do you have a plastic-free policy?
+    -  What happens to your old clothes?
+    -  Why do you use microplastics in your packaging?
+    -  What is the carbon footprint of ASOS?
+    -  Where do you get your materials from?
+    -  Why does your website only accept returns within 14 days of purchase?
+    -  What is your policy on workers' rights?
+    -  I purchased an item of clothing from ASOS but I now want to return
+    -  Is ASOS involved in the environment?
+    -  How do I dispose of my old stock?
+    -  Do you know what a cookie is?
+    -  Why can't I return my items to a store?
+    -  Do you offer a donation service?
+    -  How can I return an unwanted item to
+    -  What happens to my returns?
+    -  Why can't you use eco-friendly material in your packaging?
+    -  Why do you use microfib
+    -  How do you dispose of your old clothing?
+    -  Why can't I return an item to a different store?
+    -  How do you clean your garments?
+    -  How long will it take to process my return?
+    -  Why can't I return an item to a post office?
+- intent: faq_refund_delivery_charge
+  examples: |
+    -  Can I send you my parcel and you pay
+    -  I have sent you the item back but you still haven't refunded me
+    -  I don't want to pay the postage for returning my item
+    -  I want to exchange my item but don't want to pay the delivery charges again?
+    -  What is the return policy for ASOS?
+    -  Can I return stuff but not pay for the postage?
+    -  Can you pay my delivery charge?
+    -  Hi, I ordered a dress but unfortunately it doesn't fit. I am wanting to return it for a refund. I am wanting to return it and not pay for delivery. I am wanting to return
+    -  Can I return my item and you pay the return postage?
+    -  Can I return something and you refund the postage?
+    -  I want to return something but don't want to pay the delivery charges
+    -  I want to return my item, is there any charge?
+    -  How much is it to send your items back?
+    -  How much is it to send something back to you?
+    -  Can I return something and you refund me the delivery costs?
+    -  How much will I get back if I return something?
+    -  Do you pay the postage if I return something?
+    -  Can you refund me the postage if I send something back to you?
+    -  Can I return something and you pay the postage?
+    -  Can I return something and you refund the return postage?
+    -  I want to return some items but I don't want to pay the return postage
+    -  I want to return my items but don't want to pay the return fees
+    -  When I send something back do I pay the postage?
+    -  Can I return something and you refund the delivery?
+    -  I need to return something but I don't want to pay the fees
+    -  I've sent my items back but you've charged me
+    -  I only want to return one item, do you pay the delivery?
+    -  Can I send something back to you and you refund me the delivery charges?
+    -  Can I send something back and you pay the delivery?
+    -  What is the ASOS return policy?
+    -  How much is the return and refund option?
+    -  I want to send something back and you
+    -  Do you pay postage for your returns?
+    -  I want to return something and have you pay the delivery charges?
+    -  I need to return something but don't want to pay the delivery charges
+    -  I want to return something but don't want to pay the postage
+    -  Can I send something back and you pay the delivery charges back to me?
+    -  I want to return something to you but don't want to pay the postage
+    -  How much will you refund me if I return an item?
+    -  Can you pay the postage?
+    -  I want to send something back!
+    -  Do you pay the return delivery fees?
+    -  How much does it cost to
+    -  Do you pay for the delivery if I send something back?
+    -  Do you pay for the postage if I return an item?
+    -  Do you pay the postage if I return something to you?
+    -  '''The following are various examples of customer queries sent to the Customer Care team at ASOS:'''
+    -  I sent it back to you and now you want me to pay the postage again
+    -  I want to return something
+    -  What is the policy on returns?
+- intent: faq_return_received
+  examples: |
+    -  The item is faulty, can I get a refund?
+    -  I have a query regarding my order
+    -  Hi I returned some stuff over 14 days ago can you
+    -  I want to check if my refund was received
+    -  I want to know if my refund has been processed
+    -  I have just returned my items and
+    -  I want to check my refund status
+    -  '''The following are some examples of customer queries sent to the Customer Care team at Shop Direct: '''
+    -  I want to check if my returns were with you
+    -  I returned my item more than 14 days ago, can you check if its with you?
+    -  You should have received my return ages ago, can you check if its with you?
+    -  I haven't received my refund on my account
+    -  I want to check why my returns are still marked as uncollected?
+    -  I returned my stuff more than 14 days ago and haven't got my refund, please check if you are holding my refund
+    -  I haven't received my refund
+    -  I want to check if I have returned my stuff for free
+    -  I have returned my items more than 14 days ago, can you check if its with you?
+    -  I returned an item more
+    -  I received an email to collect my return,
+    -  I'm waiting for my money
+    -  I returned the item, why does it say "awaiting collection
+    -  I have received my refund but it's not in my account
+    -  I haven't received a refund
+    -  I returned my stuff more than 14 days ago, where is my refund?
+    -  I'm waiting for my order and I've not received an email
+    -  I returned my stuff to you on the 9
+    -  Can you check if my return is with you?
+    -  The dress I ordered arrived with a mark on it, can you please check the item condition and let me know?
+    -  Hi ASOS, I returned my stuff more than 14 days ago, where is my refund?
+    -  I'm waiting for a refund, can you check if its with you?
+    -  I returned my stuff to you on the 16th of January, where is my refund?
+    -  I sent back my item more than 14 days ago, can you
+    -  How long does it take to get money back into my account?
+    -  I want to check if my money is with you
+    -  I want to know what is happening to my refund
+    -  How do I find out the status of my return?
+    -  I returned an item more than 14 days ago and still haven't received my refund
+    -  I returned my items more than 14 days ago, can you check if it is with you?
+    -  I need to check if my returns are with you
+    -  I want to check if my returns are with you
+    -  I returned my items more than 14 days ago, where is
+    -  I am waiting for my refund, can you check if its with you
+    -  I have received an email to collect my return, but I have already collected it
+    -  I want to check my refund was received
+    -  I want to check if my returns are with you, can you check?
+    -  I want to check if any of my
+    -  I have received an automated response saying that my return is being processed, when will I receive my refund?
+    -  I returned a product more than 14 days ago, is that on hold?
+    -  I want to check if my
+    -  I have received my refund, but I can't see it on my account
+- intent: faq_return_slip
+  examples: |
+    -  I need a returns note please
+    -  I need a new return note
+    -  I have not received my returns
+    -  I need a new returns slip from ASOS
+    -  How do I get a refund?
+    -  How can I get a new returns slip?
+    -  I have lost my returns slip
+    -  I need a new returns slip from ASOS.com
+    -  I have not received my returns label
+    -  I have never received a returns slip
+    -  Where can I get a new returns slip?
+    -  I need a new return label
+    -  How can I get a refund?
+    -  When can I get a new returns slip?
+    -  Do you have a returns note I can have?
+    -  Can I have a new returns note?
+    -  How do I get a return slip?
+    -  I have not received a returns tag
+    -  I need a new returns form
+    -  How can I get a return label?
+    -  I need to replace my returns note
+    -  Can I get a new returns label?
+    -  We have not received the returns note
+    -  I need a new returns note from ASOS.
+    -  I need to get a new return slip
+    -  I did not receive my returns slip
+    -  Can you send me a new returns note?
+    -  What do I do if I didn't get a returns slip?
+    -  I did not receive my exchange slip
+    -  I have not received my returns form
+    -  I have not received my return note
+    -  I need a returns label
+    -  I need a returns note
+    -  How do I get a new returns note?
+    -  I need a new returns note from ASOS
+    -  I need a new returns note
+    -  I want a new returns note
+    -  When will I receive my returns note?
+    -  Can I get a new
+    -  I have not received a returns form
+    -  I need a new returns note.
+    -  How do I get a new returns form?
+    -  I do not have a returns slip
+    -  I did not receive my returns note
+    -  I did not receive my returns
+    -  Can I have a new returns slip?
+    -  How do I get a new returns
+    -  Can I get a returns note?
+    -  How do I get a new returns note
+    -  Can I get a new returns note?
+- intent: faq_payment_options
+  examples: |
+    -  What is the delivery time?
+    -  Can I pay by debit?
+    -  Can I pay with my Debit Card?
+    -  Can you take card payments in other currencies?
+    -  Can I pay with paysafe card?
+    -  Can I pay with a credit card?
+    -  Which credit cards do you accept?
+    -  Can I pay with ClickandBuy?
+    -  Can I use PayPal on the website?
+    -  Can I pay with my Credit Card?
+    -  When will my order arrive?
+    -  Can I pay with PhonePe?
+    -  Can I pay with Giropay?
+    -  Can I pay by instalments?
+    -  Can I put in my card details on the website?
+    -  I want to pay with my Paypal account
+    -  Can I pay with Sofort?
+    -  Can I pay with my Visa Debit Card?
+    -  Can I pay with my PaySafeCard?
+    -  Can I use my Mastercard?
+    -  How much is the delivery?
+    -  Can I pay with my paysafecard?
+    -  Can I pay with Paybefore?
+    -  Can I pay with Payoneer?
+    -  Can I pay with Visa Electron?
+    -  Can I pay with wire transfer?
+    -  Can I pay with PayPal
+    -  Can I pay with Trustly?
+    -  Can I pay with my
+    -  Can I pay with Visa gift card?
+    -  Can I pay with folio?
+    -  Can you take payments in other currencies?
+    -  Can I pay with Sofort Banking?
+    -  I want to pay with my bank account
+    -  Can I pay with PayPal Gift Card?
+    -  Can I pay with my Visa Electron?
+    -  Can I pay with MasterCard Gift Card?
+    -  Can I pay with a Mastercard?
+    -  Can you take payments from abroad?
+    -  Can I have it delivered to another address
+    -  Can I pay with Stripe?
+    -  Can I pay with Pay by
+    -  Which debit cards do you accept?
+    -  Can I pay with Giro
+    -  Can I pay with iDeal?
+    -  Can I pay with Postepay?
+    -  Can I pay with my Maestro Gift card?
+    -  Can I pay with my PayPal account?
+    -  Can I pay with PaySafeCard?
+    -  I want to pay with my credit card
+- intent: faq_unsubscribe_email
+  examples: |
+    -  I no longer want to receive emails from ASOS
+    -  I want to unsubscribe from ASOS emails
+    -  I want to stop receiving emails from
+    -  can I stop receiving emails from ASOS?
+    -  I have stopped receiving the email from ASOS
+    -  I no longer wish to rec
+    -  I want to stop receiving ASOS emails
+    -  I want to stop receiving
+    -  how do I stop getting emails from ASOS?
+    -  Can you stop sending me emails?
+    -  I don't want to receive emails from ASOS
+    -  can you stop the emails?
+    -  I no longer wish to receive emails from ASOS.
+    -  I'm sick of receiving emails from ASOS, how do I unsubscribe?
+    -  I do not want to get emails from you
+    -  please remove me from emails from ASOS
+    -  I no longer want to receive emails from asos
+    -  I don't want asos to email me
+    -  I no longer wish to receive emails from
+    -  when will i stop receiving emails?
+    -  How do I stop receiving emails from ASOS?
+    -  I am no longer receiving emails
+    -  I'd like to unsubscribe from ASOS emails, please
+    -  I want to stop getting
+    -  I no longer want to receive emails from the asos site
+    -  I no longer want to be contacted by ASOS
+    -  How do I unsubscribe from getting emails from ASOS?
+    -  I'm not interested in any new styles from ASOS
+    -  I no longer wish to receive emails from ASOS
+    -  asos, please stop sending me emails.
+    -  stop sending emails from ASOS
+    -  I would like to unsubscribe
+    -  how do i stop getting emails from ASOS?
+    -  please remove my email address from the mailing list
+    -  Can I stop receiving email blasts from ASOS?
+    -  I don't want to get emails from ASOS
+    -  I do not wish to receive emails from ASOS
+    -  I wish to unsubscribe from all ASOS emails
+    -  How do I unsubscribe from Asos emails?
+    -  I have unsubscribed from ASOS emails
+    -  Please stop sending me these emails
+    -  I don't want to receive anymore emails from ASOS
+    -  I don't want to receive any further emails from you
+    -  I dont want to receive emails from ASOS
+    -  I wish to unsubscribe from the emails
+    -  I don't want to get your emails anymore
+    -  I want to unsubscribe to ASOS emails
+    -  I don't want to receive emails from ASOS any more
+    -  I don't want to receive emails from ASOS anymore
+    -  ASOS, stop sending me emails
+- intent: faq_payment_currency
+  examples: |
+    -  I am in UK and want to pay in GB pounds
+    -  I am in Sweden and would like to pay in Swedish krona
+    -  I am in China and would like to pay in China
+    -  I am in Hong Kong and I want to pay in Hong
+    -  We can ship to the US, however you will be charged for all import duties, taxes and other charges. The charges will vary based on the
+    -  I am in the UK and want to pay in UK pounds
+    -  I am in China and want to pay in China
+    -  I am in England and would like to pay in US dollars
+    -  I am in the U.S
+    -  '''Here is a typical response:'''
+    -  I am in UK and would like to pay in UK Pounds
+    -  I am in the USA and would like to pay in US dollars
+    -  I am in the UK and would
+    -  I am in UK and would like to pay in UK GB pounds
+    -  I am in the UK
+    -  I am in UK and would like to pay in pound sterling
+    -  I am in Japan and would like to pay in Japanese Yen
+    -  I am in Denmark and would like to pay in Danish krone
+    -  I am in Canada and would like to pay in Canadian dollars
+    -  I am in Germany and would like to pay in
+    -  I want to pay in pounds
+    -  I want to pay in dollars with my debit card
+    -  I am in the Netherlands and would like to pay in Euros
+    -  I am in the US and want to pay in US dollars
+    -  I am in Canada and would like to pay in US dollars
+    -  I am in the UK and would like to pay in US dollars
+    -  I am in India and would like to pay in Indian Rupees
+    -  I am in Canada and want to pay in US dollars
+    -  I am in Australia and would like to pay in US dollars
+    -  I am in Spain and would like to pay in Euros
+    -  I am in India and want to pay in Euros
+    -  I am in Australia and would like
+    -  I am in China and I want to pay in China yuan
+    -  I am in Canada and would like to pay
+    -  I am in Japan and want to pay in Yen
+    -  I am in Italy and would like to pay in Euro
+    -  I am in UK and would like to pay in GBP
+    -  I am in Russia and would like to pay in Russian rubles
+    -  I am in the USA and would like
+    -  I am in France and want to pay in Euros
+    -  I'd like to pay in US dollars
+    -  I am in Hong Kong and want to pay in Hong Kong dollars
+    -  I am in France and want to pay in Euro
+    -  I am in Sweden and would like to pay
+    -  How much does it cost to send a parcel to the USA
+    -  I am in india and would like to pay in Indian Rupees
+    -  I am in Switzerland and would like to pay in Swiss Francs
+    -  I am in Germany and would like to pay in Euros
+    -  I am in the USA and want to pay in US dollars
+    -  I am in US and would like to pay in US dollars
+- intent: faq_return_format
+  examples: |
+    -  Now that we have an idea of what a
+    -  How do I return something with Royal Mail?
+    -  I want to return an item. I have received an email saying I can't because I live in the Channel islands. Can you explain why I did
+    -  How can I return to ASOS?
+    -  How do I return something with DPD?
+    -  How do I return something with Hermes?
+    -  I want to return something with Hermes. Can I do this?
+    -  Is it possible to return to ASOS?
+    -  How long will it take to return an item to Hermes?
+    -  Do I have to pay for return postage?
+    -  How do I return my order with D
+    -  How do I return an item with DPD?
+    -  '''The following are sample tweets sent to ASOS:'''
+    -  I would like to return something. How can I do this?
+    -  I want to return something. How
+    -  How do I return an item I bought from ASOS?
+    -  How do I return an item via Hermes?
+    -  How long will it take to return an item to ASOS?
+    -  I want to return my item. How do I do this?
+    -  How do I return an item to Hermes?
+    -  I want to return something. How can I do this?
+    -  How do I return with DPD?
+    -  I want to return something with Hermes. How do I do this
+    -  How do I return an item to DPD?
+    -  I have received a faulty item. What should I do?
+    -  How do I return items to ASOS?
+    -  How do I return to ASOS
+    -  How do I return my order to ASOS?
+    -  How do I return my item?
+    -  Can I return via Hermes?
+    -  I would like to return this item. How do I do this?
+    -  I need to return something to ASOS ...
+    -  I want to return something to ASOS. How can I do this?
+    -  How do I return an item via D
+    -  I want to return something to ASOS. How do I do that?
+    -  Can I return something to ASOS?
+    -  '''This is a simple example of a customer''''s query, followed by the response from the Customer Care team at ASOS:'''
+    -  Can we return with Hermes?
+    -  How do I return an item to the ASOS warehouse?
+    -  Can I return an item to ASOS?
+    -  How do I get a refund from ASOS?
+    -  I want to return something. How do I do this?
+    -  I have a question about returning an item to ASOS.
+    -  How do I return something to asos?
+    -  How do I return an item with Hermes?
+    -  How do I return an item I bought from ASOS to a Hermes ParcelShop?
+    -  How do I return to ASOS?
+    -  I want to return something, how do I do this?
+    -  I want to return something with DPD. Can I do
+    -  How do I return an item
+- intent: faq_gift_voucher
+  examples: |
+    -  My discount code hasn't been used, I have a voucher code
+    -  My discount code doesnt work
+    -  I am a new customer and I want to use my voucher
+    -  I have a discount code but I want to buy it with my card
+    -  I would like to know if I am eligible for a discount
+    -  I have a discount code but it's not working
+    -  I am a new customer and I want to use my voucher code
+    -  My voucher says it's already been used but I haven't bought
+    -  My discount code has already been used, I have a gift voucher
+    -  I have a discount code but I want to use
+    -  I have a discount code but it is not working
+    -  My voucher code has been used
+    -  I have just bought something and I want to know where my discount code is
+    -  How do I use my voucher code?
+    -  I can't find my discount code
+    -  I cant use my voucher. Can you please help
+    -  I cant use my voucher
+    -  My discount code doesn't work, I am a new customer
+    -  I have a question about an order
+    -  I have a discount code but want a refund
+    -  I am a new customer and I want to use my discount code
+    -  My discount code is not working
+    -  I have a question about a coupon
+    -  I have a discount code but I dont know how to redeem it
+    -  My discount code isnt working
+    -  I have a gift voucher, how do I use it?
+    -  My voucher has already been used
+    -  I have a discount code not recognised
+    -  I have just purchased an item using a discount code
+    -  I have my discount code but I have not bought anything
+    -  I have a discount code but I want to use my voucher
+    -  I have just purchased an item using a discount code but the discount wasnt applied to my
+    -  I have a problem with my account
+    -  I havent received my order
+    -  I have a question about my
+    -  My discount code has been used but I havent bought
+    -  The ASOS Customer Care team are available to assist customers with their queries relating to the use of a voucher code
+    -  I have been charged for an order that I did not make
+    -  I am a new customer and I want
+    -  My discount code says it
+    -  My discount code has expired
+    -  My voucher code has been used but
+    -  I have a discount code but I havent bought anything
+    -  I have a discount code, how do I redeem it?
+    -  I have a voucher but it is not working
+    -  I purchased an item but I had a discount code that is not working
+    -  My voucher code has been used but I ha
+    -  My voucher code has been used but I havent bought anything
+    -  My discount code has been used but I havent bought anything
+    -  '"\_I am a new customer and I want to use my voucher"'
+- intent: faq_next_day_delivery
+  examples: |
+    -  How do I track my next day delivery to Europe?
+    -  How can I track my next day delivery parcel?
+    -  My next day delivery tracking isn't working.
+    -  How much is next day delivery to France?
+    -  When will I get my next day delivery?
+    -  How do I track my order?
+    -  How do I track my delivery?
+    -  Can you deliver to Northern Ireland next day?
+    -  When can I expect my
+    -  How long will it take for next day delivery?
+    -  How much does next day delivery to Denmark cost
+    -  What does next day delivery mean?
+    -  How do I track my next day delivery order?
+    -  How can I check my next day delivery status?
+    -  How much does next day delivery
+    -  Next day delivery not received?
+    -  How much does it cost for next day delivery to Ireland?
+    -  How long will it take for next day
+    -  How much is next day delivery to Europe?
+    -  Can I check my next day delivery?
+    -  How do I track a delivery?
+    -  ASOS has been named as one of the best places to work in the UK and in 2010
+    -  Where is my next day delivery parcel?
+    -  How much does next day delivery to France cost?
+    -  How do I track a parcel sent via next day delivery?
+    -  How much does next day delivery cost to Europe?
+    -  I need to track my next day delivery parcel?
+    -  How fast is next day delivery?
+    -  How long will it take to get my delivery?
+    -  How long does it take for next day delivery to the Netherlands?
+    -  How much does next day delivery to the US cost?
+    -  How long does delivery take?
+    -  When will my next day delivery arrive?
+    -  Next day delivery parcel tracking?
+    -  I need to track my next
+    -  Next day delivery to Europe?
+    -  How much does next day
+    -  How much is next day delivery?
+    -  How long does delivery to the republic of Ireland take?
+    -  How do I track my next day delivery parcel?
+    -  How long does next day delivery take?
+    -  Where can I track my next day delivery?
+    -  How much does next day delivery cost?
+    -  How much is next day delivery to Canada?
+    -  How do I do next day delivery?
+    -  I need to know the time of my next day delivery?
+    -  How much is next day delivery to Australia?
+    -  What is next day delivery
+    -  How long does it take for next day delivery?
+    -  How do I track my next day delivery
+- intent: faq_account_sign_in
+  examples: |
+    -  How do I get back into my account?
+    -  I can't sign in because the account is locked
+    -  i have forgotten my account pin, how can i get back in?
+    -  Hi I forgot my password
+    -  I reset my password but it's still saying it's wrong
+    -  how do i unlock my account
+    -  i can't login to my account.
+    -  I need to reset my password
+    -  I can't access my account
+    -  I can't login to my account.
+    -  How do I get into my account
+    -  I can't remember my password. How do I get back into my account
+    -  I cant log in to my account.
+    -  How can I unlock my account
+    -  how can i log in to my account
+    -  How do I log onto my account
+    -  I can't sign into my account
+    -  how do i access my account?
+    -  I can't reset my password
+    -  I can't remember my password
+    -  I've forgotten my password and I can't sign in to my account
+    -  I can't login into my account
+    -  I can't sign in to my account
+    -  how can i get into my account
+    -  I am having trouble logging in to my account
+    -  I can't remember my password and I can't login to my account?
+    -  I forgot my password and can't log into my account
+    -  I've forgotten my password and I can't login
+    -  i cant log in to my account
+    -  How do I log into my account?
+    -  However, your account has now been disabled and will not be reactivated unless you change your password.
+    -  how can I get into my account
+    -  I need help with my account
+    -  I can't get into my account
+    -  how do I get into my account
+    -  How to unlock my account
+    -  I forgot my username and password to my account
+    -  I forgot my password and I can't login into my account?
+    -  I can't remember my account information
+    -  I forgot my password and I can't login to my account
+    -  i cant login to my account
+    -  how do i get into my account
+    -  How do I unblock my account?
+    -  i need to change my password on my account
+    -  I have forgotten my password. Can you help?
+    -  ''' because my password isn''''t working'''
+    -  I don't know my password
+    -  How do i remove my password from my account?
+    -  I can't login to my account?
+    -  i can't get into my account
+- intent: faq_missing_item
+  examples: |
+    -  My order is broken, what do I do?
+    -  I ordered a shirt but it's not in my parcel
+    -  I ordered a green coat but received a blue one
+    -  I ordered a shirt, it wasn't delivered
+    -  I have 6 items in my order but I received only 5 items
+    -  I received a damaged item, help!
+    -  I ordered a dress, but I didnt' receive it
+    -  The jeans I ordered don't fit me, what do I do?
+    -  I ordered a coat, do you have a tracking number?
+    -  I received a damaged item, what do I do?
+    -  I'm missing the order confirmation email
+    -  I want to cancel my order
+    -  S ure, I received the dress but not the t -shirt
+    -  I am missing an item from my parcel
+    -  I ordered a coat and a scarf but I received only
+    -  I ordered a coat, where it is?
+    -  I have a question regarding my order
+    -  How to exchange an item?
+    -  I'm missing a shirt from my order
+    -  My parcel was delivered but I received just one item
+    -  Where is my order? Can I pick it up?
+    -  I sent an email to customer care but I haven't received an answer yet
+    -  How to cancel an order?
+    -  I ordered a dress but it came crushed and dirty
+    -  I ordered a pair of shoes and a coat but I only received shoes
+    -  I ordered a pair of shoes but received a dress
+    -  I ordered a size small, but I received a size medium.
+    -  Can I return an item?
+    -  I have received a wrong order
+    -  I received the wrong item
+    -  I received the wrong delivery, I want a refund
+    -  '''@ asos what is happening with my'''
+    -  I haven't received my order
+    -  My order was dispatched yesterday but I haven't received it yet
+    -  Increased competition in the online retail market
+    -  I ordered a coat and a dress, where are they?
+    -  I ordered a t -shirt and a jumper but received only the t -shirt
+    -  I received my order but something is missing, what do I do
+    -  When will you get the t -shirt back in stock?
+    -  ''' and was told it was out of stock?'''
+    -  I ordered something from ASOS but it is missing in my parcel
+    -  I received the dress but not the t -shirt
+    -  I ordered 3 items but I only received
+    -  I ordered a coat and a scarf but I received only one of them
+    -  I ordered 2 items and only one of them arrived
+    -  I'm not satisfied with my order
+    -  The coat I ordered was the wrong size
+    -  I ordered a coat and got a shirt
+    -  I received the wrong size of my item
+    -  I placed an order but I haven't received my order yet
+- intent: faq_change_password
+  examples: |
+    -  I'm having trouble logging into my account
+    -  I have forgotten my passphase
+    -  I forgot my pass phrase
+    -  How do I reset my password
+    -  I can't log in to update my password
+    -  I can't remember my email
+    -  I need to change my passephrase
+    -  How do I update my passphrase
+    -  I have forgotten my pass phrase
+    -  How do I reset my password to my username
+    -  I can't sign in to my account
+    -  I have forgtten my passphrase
+    -  How do I change my
+    -  I can't log in with my current pass phrase
+    -  Why can't I log in
+    -  I want to change my password
+    -  These are all examples of people who have tried to log in to their ASOS account but have forgotten their password. In fact, the ASOS website will not allow you to login if you have forgotten your password. A person who has forgotten their password will have to click on '
+    -  I can't change my passephrase
+    -  I forgot my account password
+    -  How can I change my password
+    -  I can't access my account
+    -  I am having problems logging in to my account
+    -  I can't remember my password
+    -  I can't log in with my username and pass phrase
+    -  I've lost my account details
+    -  Why can't I log in to
+    -  I can't log in my account
+    -  My login password isn't working
+    -  I can't reset my passephrase
+    -  I need to change my email password
+    -  I need to update my details
+    -  I forgot my email address
+    -  I can not get into my account
+    -  I'm having trouble logging in
+    -  I can't log in with my pass phrase
+    -  I forgot my log in details
+    -  I cannot log in to my account
+    -  I have lost my pass word
+    -  How do I reset my passephrase
+    -  I can't remember my passephrase
+    -  I can't get in to my account
+    -  How do I change my password
+    -  How do I change my password to my username
+    -  You need to get your passphrase from 'My ASOS' under 'My account' and 'My details'.
+    -  I am stuck on the password screen
+    -  How do I change my passephrase
+    -  What is my login password
+    -  My login password doesn't work
+    -  I can't reset my email password
+    -  I can't log in into my account
+- intent: faq_faulty_item
+  examples: |
+    -  I have a query about my order
+    -  I've been waiting too long for my order
+    -  My order was delivered late
+    -  I received the wrong order
+    -  I think my item is faulty
+    -  I was sent a different product to the one I ordered
+    -  I have a problem with a product
+    -  What should I do if my order has not arrived?
+    -  I am unhappy with my order
+    -  What should I do if my order is late?
+    -  What should I do if my order is missing items?
+    -  '''The following are various examples of customer queries sent to the Customer Care team at ASOS:'''
+    -  What should I do if my order is wrong?
+    -  What should I do if I have an issue with an item?
+    -  I am concerned about the item I received
+    -  I have a problem with my order
+    -  What if I want to return my item?
+    -  What if I need to cancel my order?
+    -  I received the wrong item
+    -  I am not happy with my order
+    -  I haven't received my item
+    -  '''This is the first example of a customer query. It is important to note that this customer is making a complaint about the material of the jeans:'''
+    -  I need to return my items
+    -  The writing on my item has come off
+    -  I have received my order and it is faulty
+    -  My product has changed colour
+    -  My item was damaged during delivery
+    -  What if I need to return an item?
+    -  My item has a fault
+    -  My jeans have ripped where they were not supposed to
+    -  I would like to return my item
+    -  I have a query about my email
+    -  I have a query about
+    -  I have a problem with the delivery of my order
+    -  I have received a damaged item
+    -  What if my item is incorrect?
+    -  I have received an incorrect size
+    -  What if my item is faulty?
+    -  I think I have received a fake item
+    -  I received the wrong colour
+    -  My order has been cancelled
+    -  I have a query about an order I placed
+    -  I have not received my order
+    -  My item has an error on the label
+    -  I have a question about my order
+    -  I've received the wrong item
+    -  My item has not arrived
+    -  What should I do if I receive an item which I have not ordered?
+    -  My item has been damaged in transit
+    -  I need to return an item
+- intent: faq_wrong_item_received
+  examples: |
+    -  The item is too long/short
+    -  I have received the wrong design
+    -  My item is too small
+    -  The item I received is not the same as the picture
+    -  I have received a damaged item
+    -  I ordered the wrong colour
+    -  I have received the wrong delivery
+    -  I have received the incorrect color
+    -  I received the incorrect item
+    -  I have received a different item
+    -  I ordered the wrong item by accident
+    -  The size of the item is incorrect
+    -  I have received the incorrect size
+    -  The item is the wrong colour
+    -  I ordered the wrong dress size
+    -  I have ordered the wrong size
+    -  I ordered a top but you sent me a dress
+    -  I have received the wrong colour
+    -  I have received the item but it's faulty
+    -  I ordered two items but received only one
+    -  In addition to the above, ASOS also offer a number of other services, such as the 'ASOS Marketplace', which allows customers to sell their own items on the website, and 'ASOS Marketplace Plus', which allows customers to sell even more items.
+    -  Please provide a refund for my order
+    -  I've never received the item
+    -  I received the wrong product
+    -  I ordered a coat but you sent me a pair of jeans
+    -  I have received the item in the wrong colour
+    -  I have an incorrect item
+    -  The item I received is not the same as the item I ordered
+    -  I ordered a XS/S but received a M/L
+    -  I ordered two items and one of them is the wrong color
+    -  I have received a different size
+    -  The item is not the same as the pictures
+    -  I received the wrong size
+    -  I received a different item
+    -  The item I ordered is too small
+    -  I have the wrong item
+    -  I ordered the item and received the wrong colour
+    -  I have received the wrong item
+    -  I have received the incorrect colour
+    -  I have received the incorrect product
+    -  I have received an incorrect
+    -  The garment I ordered is the wrong size
+    -  I have received an incorrect item
+    -  I have received a faulty item
+    -  I have received an incorrect order
+    -  The item I received is not the same as the photo
+    -  I received the wrong item
+    -  I received the wrong colour
+    -  I am absolutely disgusted. I am not happy at all with my order
+    -  I ordered the wrong dress
+- intent: faq_student_discount
+  examples: |
+    -  I want to order the wrong size of nike shoes so that I can return them for a full refund
+    -  I have not received the validation email and I am a student
+    -  I have a valid student discount code
+    -  I have just placed an order on ASOS and
+    -  I have not received my validation
+    -  I am a student and I am unable to get the student discount code
+    -  ''' at ASOS when I am a student'''
+    -  I have just signed up for ASOS and I don't have a validation email
+    -  I have been trying to add my student
+    -  I applied for a job but I didn't receive any confirmation email?
+    -  I have a student discount code but I am not a student
+    -  I have not received my validation email for my student code
+    -  I have a student code but I'm not sure if it's valid
+    -  I have a student code and I
+    -  '''The customer service agent will have to:'''
+    -  I have used my student discount code, but I have not received my order
+    -  How do I register my student email address to get the validation email and use my student discount code
+    -  I am a student but I don't have a validation email
+    -  When I did my order the courier delivery service was not working
+    -  I have forgotten my validation code. Please respond to this email asap
+    -  I'm a student but I don't have the validation email
+    -  I have a student discount code but I have not received a new validation email
+    -  I'm a student but I don't have a
+    -  ''' when I am a student'''
+    -  I have not received the validation email and I am a
+    -  I have been trying to login with my student discount code but I have not received
+    -  I have not received my validation email what do I do
+    -  I am a student but I have not received my
+    -  How do I get the student discount code?
+    -  I have not received the validation email I requested
+    -  I have changed my password but I have not received a new validation email
+    -  Send the validation email to the customer
+    -  No one has answered my email
+    -  I did not receive my student discount
+    -  I have a student code and I want to use it
+    -  I am a student but my college
+    -  How do I get a student discount code at ASOS when I am a student
+    -  I have a student discount code but it's not
+    -  I have changed my email address but I have not received a new validation email
+    -  I am a student but I did not receive a validation email
+    -  I am a student but I was not able to add my student discount code
+    -  I have changed my phone number but I have not received a new validation email
+    -  I am not a student but I would
+    -  I am a student but I cannot use my student discount because I have no validation email
+    -  I am a student and I have a validation email but it is not working
+    -  I have not received my student validation email
+    -  Is the student discount code still valid
+    -  I am a student but I have not received a validation email
+    -  I am a student but I have not got the validation email
+    -  I am a student but my university email address is validated
+- intent: faq_missing_comms
+  examples: |
+    -  How can I get a shipping confirmation email from ASOS?
+    -  I haven't received an order update email from ASOS
+    -  I have an order confirmation email but I haven't received an order number
+    -  I haven't received a shipping number from ASOS
+    -  I haven't received a return confirmation email
+    -  I haven't received an email about a back order from ASOS
+    -  I haven't received an order number for a refund
+    -  My order number doesn't match my order status
+    -  I am waiting for an order confirmation email
+    -  I haven't heard anything from ASOS about my order
+    -  I haven't received a shipping confirmation email, what should I do?
+    -  I haven't received a tracking number for an order
+    -  I haven't received a tracking confirmation email from ASOS
+    -  I haven't received a confirmation email for an order
+    -  I haven't received a refund email from ASOS
+    -  I haven't received a shipment confirmation email from ASOS
+    -  I haven't received my order number for my order
+    -  I haven't received an item that was delayed in shipping from ASOS
+    -  I haven't received an order
+    -  I haven't received a payment confirmation email from ASOS
+    -  What's the status of my order?
+    -  I haven't received a payment
+    -  I haven't received a shipping confirmation email for a return
+    -  I haven't received a shipping
+    -  I've sent an ASOS refund request but I haven't heard back from ASOS
+    -  I haven't received my payment confirmation
+    -  I haven't received a shipping confirmation email from AS
+    -  I haven't received a refund confirmation
+    -  I haven't received a refund confirmation email from ASOS
+    -  I haven't received a return label from ASOS
+    -  I haven't received a cancellation confirmation email from ASOS
+    -  I haven't received a notification about a change to my order
+    -  I haven't received an order confirmation email
+    -  I am waiting for a refund from ASOS
+    -  I haven't received a returns confirmation email from ASOS
+    -  I have placed an order but
+    -  I haven't received any emails from ASOS about an order
+    -  I haven't received an order confirmation email from ASOS
+    -  I haven't received an order number
+    -  I haven't received a return confirmation email from ASOS
+    -  I haven't received a refund
+    -  I haven't received a tracking confirmation email from ASOS from my order
+    -  I haven't received a refund confirmation email
+    -  I haven't received my items
+    -  ASOS hasn't contacted me about an order
+    -  I haven't received a payment confirmation email for an order
+    -  I haven't received my shipping confirmation
+    -  I haven't received a payment confirmation email
+    -  I haven't received a shipment tracking email from ASOS
+    -  I haven't received a dispatch email from ASOS
+- intent: faq_payment_card_refund
+  examples: |
+    -  If my card is no longer in
+    -  How do I change my card details after I have requested a refund?
+    -  If my card is out of date, can I still use it to pay for an item and get the refund?
+    -  I've requested a refund, can I change my card details?
+    -  If my card details have changed what happens to my refund?
+    -  I've cancelled my order, can I get a refund?
+    -  How do I change my card details after I've requested a refund?
+    -  I have changed my card number but you have not refunded me, what do I do?
+    -  If I change my card details will you refund my order?
+    -  If my card is no longer in use will you refund my order?
+    -  If my bank details change will you refund my
+    -  What happens to my refund if my details are incorrect?
+    -  What happens to my refund if my card is no longer
+    -  Can I change my card details after I have
+    -  If you're not sure how to deal
+    -  What happens to my refund if I change my card details?
+    -  Can I change the card details on my return?
+    -  If my card details have changed will you refund my order?
+    -  If I've changed my card details will I be refunded?
+    -  Can I get a refund if my bank details have changed?
+    -  If my card is no longer in use can I get my order refunded to another card?
+    -  What will happen to my refund if I change my card details?
+    -  What happens to my order if I cancel it?
+    -  If I want to change
+    -  What happens if I change my card details?
+    -  Will you refund my order if my card details have changed?
+    -  If I have changed my card details will you refund my order?
+    -  What happens to my refund if my card details are no longer in use?
+    -  3. The customer checks out and pays
+    -  My bank details have changed. Will you refund me?
+    -  Will you refund me on my new card?
+    -  If my account details change will you
+    -  Why can't I get a refund to a different card?
+    -  What happens to my refund if my card number has changed?
+    -  Why won't you refund me?
+    -  If I want to change my delivery address how do I do it?
+    -  Why do I have to contact my bank after my order has been refunded?
+    -  My card has changed, do I need to update my details?
+    -  Please can you check the address on my account?
+    -  Why can't I get a refund to a different
+    -  I've changed my card details, can I get
+    -  What happens to my refund if my card
+    -  If my card details have changed can I get a refund to a different card?
+    -  If I change my bank details will you refund my order?
+    -  Will you refund my card if I have changed my card details?
+    -  If my card details change will you refund my order?
+    -  Can I request a refund to a different card?
+    -  Can I cancel my order if I've given you the wrong card details?
+    -  If my card's expiry date changes, will I be refunded?
+    -  How do I request a refund if my card has expired?
+- intent: faq_animal_welfare
+  examples: |
+    -  Does ASOS use animal fur
+    -  Does ASOS sell products containing animal skin/fur?
+    -  What is your policy on using animal skin in your products?
+    -  Do you use animal by-products in your products?
+    -  Do you have vegan products?
+    -  Does ASOS use real animal fur in their clothing?
+    -  What does ASOS mean by 'vegan' on their website?
+    -  Do you use leather in your products?
+    -  Do you sell animal fur?
+    -  What are the ingredients in your makeup?
+    -  Does ASOS use real rabbit fur?
+    -  How do you ensure that your products are
+    -  Do you use animal fur in your products?
+    -  Does ASOS use real animal fur?
+    -  Does ASOS use animal skin in their products?
+    -  Can you confirm that ASOS uses animal fur?
+    -  ASOS Customer Care team were unable to meet customer expectations.
+    -  Are all of your products free from animal by-products?
+    -  What is ASOS's definition of cruelty-free?
+    -  Why doesn't ASOS label their products as being vegan/vegetarian?
+    -  What steps do you take to ensure that your products are not tested on animals?
+    -  Are any of your products vegan?
+    -  How do you feel about animal welfare?
+    -  Does ASOS sell real fur or animal skin?
+    -  Does ASOS use animal fur in their products?
+    -  Does ASOS use animal fur or animal skin?
+    -  Do you use real animal fur in your products?
+    -  Are ASOS products free of animal products?
+    -  Is there any animal skin in your products?
+    -  Does ASOS take part in animal testing?
+    -  Do you use animal fur or skin in your products?
+    -  Is ASOS a vegan brand?
+    -  Do you have any vegan shoes?
+    -  Do you have any vegan products?
+    -  Does everything on ASOS contain animal products?
+    -  Can you confirm that your shoes are not made from real leather?
+    -  How did you make sure none of your products are tested on animals?
+    -  How do you ensure animal welfare?
+    -  What is leather made of?
+    -  What is the difference between vegan, vegetarian, and cruelty-free?
+    -  Do you have a vegan policy?
+    -  Does ASOS use animal fur?
+    -  Do you test on animals?
+    -  Does ASOS have a vegan range?
+    -  Are you a vegan company?
+    -  Does ASOS use real fur?
+    -  ASOS is not a vegan brand.
+    -  Do you sell vegan products?
+    -  Can you confirm that ASOS is a cruelty-free brand?
+    -  Does ASOS use animal skin?
+- intent: faq_returns_policy
+  examples: |
+    -  How long do I have to return an item? You have 30
+    -  How long can I keep an item that I've returned?
+    -  What if I have an issue with a product?
+    -  Your order is created immediately after you place it. We send out your order as soon as possible, but this process can take a few hours.
+    -  My items were missing from my order, what can I do?
+    -  If you have a question about your order, please log in to your ASOS account and go to 'My Orders'. Hover over the order in question
+    -  Will I be refunded the delivery
+    -  What if the size of an item isn't right?
+    -  The item is damaged in transit
+    -  This was only from a single day in July.
+    -  Am I allowed to return makeup if it's been opened?
+    -  Can I return a coat if it's a small size?
+    -  How long will it take to refund my return?
+    -  What if an item is missing from my order?
+    -  Do I need to pay for the return postage?
+    -  '''For queries regarding ASOS orders, customers can contact the Customer Care department via the website and the following details:'''
+    -  What if I want to return something I bought in store?
+    -  We hope you found this blog post useful and were able to find the answers to some of your questions about returns. If you have any other queries please don't hesitate to contact us on 0844
+    -  Can I return something that I've just tried on?
+    -  I've tried my item on
+    -  I'm not sure who these people think they are. Questions like this, if genuine, are often easily answered with a quick Google search and should not be the responsibility of an employee who is probably paid minimum wage.
+    -  Can I return an item to a store?
+    -  '''There are a few similarities to be found between these queries. I''''ve pulled out a few of the most important points below:'''
+    -  I ordered the wrong item, can I return it?
+    -  My order has arrived damaged, can I return
+    -  I have an issue with my order...
+    -  How do I return my item?
+    -  How can I return an item?
+    -  I want to return an item for a refund, how long will it take?
+    -  How do I return something to ASOS?
+    -  I ordered something and it arrived broken.
+    -  When can I return an item?
+    -  Can I return a gift?
+    -  Can I return a Christmas gift?
+    -  How long can I return an item for?
+    -  '''Here are some reasons that may occur, which could delay your order:'''
+    -  I'm not happy with my purchase.
+    -  I want to return something that I purchased as a gift
+    -  I've got some items I want to return. Can you tell me the return address?
+    -  Is there a refund if I have an exchange?
+    -  How long is the return period?
+    -  I'm not happy with my order, what do I do?
+    -  I had to return an item because it was faulty. When will I get a refund?
+    -  Do I need to contact you directly if something goes wrong with my order?
+    -  What if I have to return an item because it's faulty?
+    -  I didn't know ASOS sold XXX brand, how can I return an item from this brand
+    -  Do refunds come in the original payment format?
+    -  My shoes have a label inside them. Can I return them?
+    -  I'm missing an item from my order
+    -  What if I have a question about my order?
+- intent: faq_order_not_received
+  examples: |
+    -  What do I do if my order hasn't arrived?
+    -  I've waited over a week for my order?
+    -  What should I do if my order hasn't arrived?
+    -  What should I do if my order hasn't been delivered yet?
+    -  how long does it take for my order to arrive?
+    -  why hasn't my order been delivered yet?
+    -  when will my order come?
+    -  what do i do if my order hasn't arrived?
+    -  how long does it take to get my delivery?
+    -  what can i do if my order hasn't arrived?
+    -  what should i do if my order hasn't arrived yet?
+    -  When will my order be dispatched?
+    -  Are you going to deliver my order yet?
+    -  when will my order get here?
+    -  When will my order get here?
+    -  i ordered my item 10 days ago what should i do if it has not turned up?
+    -  when do i get my order?
+    -  What do I do if my
+    -  Is there a problem with my order?
+    -  What should I do if my order hasn't been delivered?
+    -  i've waited over a week for my order
+    -  when will my order arrive?
+    -  i'm worried it won't get here in time
+    -  I'm worried my order won't arrive by Christmas
+    -  how long does it take for your order to come?
+    -  what do i if my order hasn't arrived?
+    -  when will my order be delivered?
+    -  Do I have to wait for my order?
+    -  how long does it take to make my order?
+    -  my order has not arrived yet
+    -  I'm sorry to hear your order has not arrived yet. I can see that the tracking is still showing that your order is on its way to you.
+    -  how long does it take for the parcel to arrive?
+    -  can i get my order?
+    -  how long will it take for my order?
+    -  Thank you for getting in touch with us regarding your recent order.
+    -  how long do i have to wait from the date of dispatch?
+    -  I've waited over a week for my order
+    -  how long does it take for an order to arrive?
+    -  will my order arrive today?
+    -  I have not received my package
+    -  my order hasn't arrived yet
+    -  why has my order not arrived?
+    -  What should I do if I don't receive my order?
+    -  will my order be delivered today?
+    -  When will my order arrive?
+    -  What should I do if my order hasn
+    -  when do you get your order
+    -  how long does it take for my order to come?
+    -  what if my order hasn't arrived?
+    -  How long does it take to get my order?
+- intent: faq_size_guide
+  examples: |
+    -  Can I exchange something I already have?
+    -  What is your exchange policy on plus size?
+    -  I need a dress by this weekend, is there a quick delivery service for plus size?
+    -  I have a question about the sizing of a product, where can I find the measurements?
+    -  How can I find out what styles
+    -  Are your shoes in UK sizes?
+    -  Do you have plus size swimsuits?
+    -  Why does ASOS not sell big sizes?
+    -  Where can I find out more about your sizing?
+    -  Can I return my order
+    -  When will you be adding more plus size to your collection?
+    -  But, what does ASOS mean
+    -  I need to return something, how do I do that?
+    -  I am a size XXL, what size should I order from ASOS?
+    -  Will you be adding plus size to the international sites?
+    -  Do you ship to my country?
+    -  I need to return something, how long is the return
+    -  Do you have any plus size tips for fashion?
+    -  Can I return if something doesn't fit?
+    -  How do I know which ASOS size to order?
+    -  I am a size XXL/6XL/14/16/18, what size should I order from
+    -  ASOS have said that they do not have a plus size section because they feel it is unhelpful to label sizes as 'plus size', which can be confusing for consumers.
+    -  Does ASOS ship to my country?
+    -  I am a size 10/12/14/16/18, what size should I order from ASOS?
+    -  How can I find out the sizing of a specific product?
+    -  What is your policy on returns?
+    -  Do you have a plus size section?
+    -  I have a question about the sizing of a product, where can I find the model's measurements?
+    -  How can I find out my bust, waist and hip measurements?
+    -  Do you do maternity plus size?
+    -  How can I find out if the item will fit me?
+    -  What is the difference between ASOS Curve and ASOS Maternity?
+    -  Why does your website not have a search function for plus size?
+    -  Can you help me find my size?
+    -  How do I return items for a store credit?
+    -  Where can I find the size guide?
+    -  What is a sizing chart?
+    -  I live in a different country to you, why don't you ship to
+    -  Do you have petite sizes?
+    -  How do I measure my hips?
+    -  I have a question about sizing
+    -  What is your best selling plus size item?
+    -  I am a size XXL/6XL/14/16/18, what size should I order from ASOS?
+    -  What happens if an item is out of stock in a size I want?
+    -  How do I purchase plus size from ASOS?
+    -  Does ASOS have plus size swimwear?
+    -  How do I return items for an exchange?
+    -  When will your plus size range launch?
+    -  I want to send something back, how do I do that?
+    -  Do you have plus size petite or petite plus?
+- intent: faq_marketplace_app
+  examples: |
+    -  ASOS Why is market place not in the app?
+    -  ASOS Why cant I find marketplace in the app?
+    -  Can I use my vouchers on ASOS app?
+    -  Why can't I find market place on the app?
+    -  Where is marketplace on the app?
+    -  Where is ASOS Market place?
+    -  I cant find marketplace on the app
+    -  I can't find market place on the app
+    -  ASOS why isn't Marketplace on the app?
+    -  Why cant i find marketplace in the app
+    -  Why doesn't the mobile app have an app for marketplace?
+    -  Does ASOS have an app for the market place?
+    -  What happened to marketplace on the app?
+    -  Why isn't there an ASOS Marketplace app?
+    -  Market Place is not on the app
+    -  Marketplace is not a keyword that will return any results on Google
+    -  Why isn't market place on the app
+    -  I can't find Market Place on the app
+    -  Why can't I find the marketplace on the app?
+    -  ASOS, why isn't there an app for marketplace?
+    -  When will ASOS Marketplace be on the app?
+    -  ASOS Why is market place not on the
+    -  Do you have an app?
+    -  Why can't I use my discount voucher on the app?
+    -  Why isn't Market Place on the app?
+    -  Asos where is market place?
+    -  I can't find marketplace on the app
+    -  Why is there no app for Marketplace?
+    -  Why don't you have Marketplace in the
+    -  Why isn't marketplace accessible on the app?
+    -  Marketplace isn't on the app
+    -  Why isn't the app available for ipad?
+    -  Is there an app for marketplace?
+    -  Where are marketplace on the app?
+    -  Why doesn't the app have market place?
+    -  Marketplace isn't on the app, how am I supposed to sell my stuff?
+    -  How do I make returns on the app?
+    -  Why isn't marketplace in the app?
+    -  Where do I find Marketplace?
+    -  Why marketplace is not in the app?
+    -  I'm dissapointed marketplace isn't on the app
+    -  Why isn't the market place on the app?
+    -  Why isn't the marketplace on the app?
+    -  Why is there not marketplace in the app?
+    -  How do I search Market Place on the app?
+    -  Why is there no marketplace on the app?
+    -  Why is marketplace not on the app?
+    -  Why isn't market place in the app?
+    -  ASOS Marketplace isn't on the app anymore.
+    -  Where is market place on the app?
+- intent: faq_stock
+  examples: |
+    -  Do you know when you will get more in?
+    -  Will you be getting more in?
+    -  Do you know when you get more?
+    -  Are you getting more in?
+    -  When will you be getting more
+    -  Why haven't you got more
+    -  The most frequent questions posed to the Customer Care team at ASOS are also quite typical of customer service queries in general. They concern returns, exchanges, refunds,
+    -  What's your next restock date?
+    -  Do you have more stock coming in?
+    -  When will you get new stock?
+    -  The following is a list of customer queries sent to
+    -  Do you know when you get more stock?
+    -  When are you getting stock in?
+    -  When will you be getting more stock?
+    -  Do you know when you're getting more in?
+    -  Do you know when you'll have more stock?
+    -  When will you get your next delivery in?
+    -  Will you be getting more stock?
+    -  Please advise if you have more stock?
+    -  Have you got more stock coming in?
+    -  Can you tell me when you
+    -  I was just wondering if you will be getting more stock.
+    -  Are you getting any more in?
+    -  Will you be getting more stock in soon?
+    -  Do you have any more stock coming in?
+    -  When will you get stock in?
+    -  Any more stock coming in?
+    -  Can you put this in a bigger size?
+    -  I ordered a size 8. Do you have more stock?
+    -  I'm after a red shirt, this one doesn't come in red, when will you get more in?
+    -  I ordered a size 8, but it's too big. Do you have any more in a size 8?
+    -  When do you get more stock?
+    -  When will you have more stock?
+    -  When will you be restocking?
+    -  How long will it take to get my order?
+    -  When do get more stock?
+    -  When will you be getting more?
+    -  When are you going to have more stock?
+    -  A similar issue arises when
+    -  When will you be getting more stock in?
+    -  When are you getting more stock in?
+    -  When will you be getting
+    -  Do you know when you will get more stock in?
+    -  Is there more stock coming in?
+    -  When will you get more
+    -  Do you know when you're getting
+    -  Can you tell me when you get more stock?
+    -  Can you get more stock in?
+    -  When is your next restock date?
+    -  When will you have more?

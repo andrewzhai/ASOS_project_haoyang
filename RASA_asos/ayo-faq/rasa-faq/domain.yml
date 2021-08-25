@@ -1,0 +1,374 @@
+version: "2.0"
+ 
+# Intents: Added 'faq' intent
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - faq
+ 
+# Actions: Added 'utter_faq' action
+actions:
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_sad
+  - utter_goodbye
+  - utter_iamabot
+  - utter_faq
+ 
+# Responses: predefined
+responses:
+  utter_greet:
+  - text: "Hi there. What can I help you with?"
+ 
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+ 
+  utter_did_that_help:
+  - text: "Did that help?"
+ 
+  utter_happy:
+  - text: "Great! Is there anything else I can help you with?"
+ 
+  utter_sad:
+  - text: "Oh no, sorry to hear it! Could you maybe try to rephrase your question?"
+ 
+  utter_goodbye:
+  - text: "Bye"
+ 
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+ 
+# Responses: faq-related
+  utter_faq/fur:
+  - text: "ASOS only uses fake fur in its products."
+
+  utter_faq/delivery_slot:
+  - text: "On our Precise Delivery service, you can choose a delivery day of your choice, up to 10 days in advance. \n
+  Depending on your postcode, you'll be presented with additional in-flight delivery options including: \n     - Selecting your 1-hour delivery window
+  \n     - Changing your delivery date
+  \n     - Requesting leave with neighbour
+  \n     - Requesting leave in a safe place
+  \n     - Requesting collect from a Pickup shop."
+ 
+  utter_faq/delivery_address:
+  - text: "For your security we aren't able to change the address your order is being sent to. Don't worry – if you're not in when a delivery is attempted our carrier will leave a card advising how to arrange a redelivery or where you can pick up your parcel."
+ 
+  utter_faq/return_prohibited_items:
+  - text: "Always check the product info section for details on whether the item is returnable. For items which can be returned we can only accept beauty items back to us if they have been unused and are still sealed for hygiene purposes. \n
+  Click [here](https://www.asos.com/payments-and-deliveries/returns/) to view your returns options."
+ 
+  utter_faq/exchange_item:
+  - text: "We’re no longer offering free exchanges to UK customers. All returned items will be refunded once they've been inspected by our warehouse team. If you need a different size or colour of an item, then you'll need to place a new order. \n
+  - Returns are FREE and trackable. \n
+  - You have 28 days from the date you receive your order to return it for a refund. \n
+  - It can take up to 10 days for your order to reach the warehouse and be processed. \n
+  - Refunds can take up to 10 working days to show on your account."
+ 
+  utter_faq/return_multiple_orders:
+  - text: "Yes! You can combine your returns and send back items from different orders in the same parcel."
+ 
+  utter_faq/track_delivery:
+  - text: "If your order has been sent to you using a trackable service, you can follow its journey to you. You'll receive a shipping confirmation email from our warehouse once your order is on its way; simply click on your tracking link on this email to view the up to date tracking."
+ 
+  utter_faq/enquire_premier:
+  - text: "Once you've signed up to Premier Delivery, you’ll still be able to select different delivery types as you did before – you just won’t need to pay for them! \n Your subscription is valid on the order you purchase it on and can take up to 1 hour to be activated against your account. You'll receive an email once your Premier Delivery subscription is active. \n
+  To find out more about Premier Delivery, [click here](https://www.asos.com/customer-care/delivery/can-you-tell-me-more-about-your-premier-delivery-service/)."
+ 
+  utter_faq/responsible_shopping:
+  - text: "Giving you the confidence to shop with both sustainability and style in mind, our responsible edit is your one-stop home for all the environmentally conscious clothing, accessories and living items at ASOS. Look out for recycled goods, where waste, plastic and textiles have been recreated as new products. You’ll also find sustainable fibres and fabrics, which use less water and exert less waste along the way, making these buys better for the environment. It’s our call for sustainability, without compromising your unique style. All the feel-good vibes! \n [Click here](https://www.asos.com/women/the-responsible-edit/cat/?cid=28981) to browse for recycled goods."
+ 
+  utter_faq/refund_delivery_charge:
+  - text: "Your delivery charge will be refunded in some circumstances, for example if your entire order was faulty or incorrect, or if your order has been cancelled under the Consumer Contracts Regulations. For more information on the Consumer Contracts Regulations, [click here](https://www.asos.com/customer-care/order-issues/how-can-i-cancel-my-order---consumer-contracts-regulations-2013/)."
+ 
+  utter_faq/return_received:
+  - text: " Hold tight! It can take up to 10 working days for your order to reach our warehouse and be processed. Refunds can take up to 10 working days to show in your account. Keep hold of your proof of postage - we may need to see it at a later date. Find out how to track your return [here](https://www.asos.com/customer-care/returns-refunds/how-can-i-track-my-return/)."
+ 
+  utter_faq/return_slip:
+  - text: "Haven’t you heard? ASOS have taken returns online! You’ll no longer receive a paper returns slip or returns label with your order – instead, you'll need to create your return through your ASOS account - no paper or printer required! \n
+  Here's how you can create a return: \n
+  1. Go to the My Orders section of your account and click Create Return next to the order you’re looking to send back to us. \n
+  2. You’ll need to select the items you’re returning and the reason you’re returning them to us. \n
+  3. Search by postcode, street or address to find your nearest drop off point. You’ll still have the option to choose which carrier you’d like to return your order with, but we’ll let you know which one is closest to the address you’ve given us. Select the carrier you’re returning your order with and ‘Place Return’. Please remember that all the items you select to return to us must be from the same order and posted back in one parcel. If you've missed any items off your return, you'll need to create another QR code and return those items in a separate parcel. \n
+  4. Once created, your unique QR code will be emailed to you. We’ll also save your QR code to your account under My Returns, just in case the email gets deleted."
+ 
+  utter_faq/payment_options:
+  - text: "You can use any of the payment types listed below to pay for your order. We take your security very seriously, therefore your details are safe with us."
+    image: "https://content.asos-media.com/-/media/customer-care/images/help-page-imagery/com/uk-payment-methods.png"
+ 
+  utter_faq/unsubscribe_email:
+  - text: "If you no longer wish to subscribe to ASOS emails or texts, you can unsubscribe simply by: \n
+  Clicking on the unsubscribe link in one of our emails \n
+     OR \n
+  Logging into your ASOS account and clicking Contact preferences from the list. This will open up your preferences. You'll then need to untick the communication boxes and click Confirm preferences. \n
+  Please note, once you unsubscribe, it can take up to 7 days for the change to take effect. \n
+  If you change your mind later and want to subscribe again, simply follow the above steps."
+ 
+  utter_faq/payment_currency:
+  - text: "You can pay in GBP when the UK flag is selected. \n
+  If you're shopping via the App, you can update your country and currency by selecting the Settings cog on My Account.\n
+  If you're shopping on our desktop site, simply click on the flag icon in the top right corner of the page and the currency for the country you've selected will show in the Currency section. \n
+  When you come to pay for your order, you'll be charged in the currency you have selected. \n
+  Please note: Gift vouchers can only be redeemed in the same currency they were purchased."
+    image: "https://content.asos-media.com/-/media/customer-care/images/help-page-imagery/com/change-currency-app.jpg"
+ 
+  utter_faq/return_format:
+  - text: "You can return for FREE by: \n
+  1. Going to the My Orders section of your account and click Create Return next to the order you’re looking to send back to us. \n
+  2. Selecting the items you’re returning and the reason you’re returning them to us. All returned items should be sent in their original condition and packaging including tags e.g. shoes should be returned with the original shoe box. In the unlikely event that an item is returned to us in an unsuitable condition, we may send it back to you. \n
+  3. Searching by postcode, street or address to find your nearest drop off point.You’ll still have the option to choose which carrier you’d like to return your order with, but we’ll let you know which one is closest to the address you’ve given us. \n
+  Decide which carrier you're returning with and Place Return. Please remember that all the items you've selected need to be posted back in one parcel. We recommend removing or covering your shipping label before attaching your returns label to the parcel. \n
+  4. Your unique QR code will be emailed to you. We’ll also save your QR code to your account under My Returns, just in case the email gets deleted. Take your parcel and QR code to your chosen drop off point and they’ll take care of the rest! \n
+  5. Hold tight! It can take up to 10 working days for your order to reach our warehouse and be processed. Refunds can take up to 10 working days to show in your account. Keep hold of your proof of postage - we may need to see it at a later date."
+ 
+  utter_faq/gift_voucher:
+  - text: "To pay for an order with a Gift Voucher, you have 2 options: \n
+Option 1 - Any vouchers already linked to your account will show under the Promo/Student Code or Voucher tab at checkout. \n
+Select the gift voucher as your chosen payment method and the value will automatically be deducted from the overall cost of your order. \n
+Option 2 - Enter your Gift Voucher code at checkout. \n
+When you get to checkout, select the Promo/Student Code or Voucher tab and enter your 16-digit voucher code. The total amount will automatically be deducted from your order. \n
+\n
+Is your promo code not working? \n
+If you find that your promo code isn't working then please check the below:
+ 
+You can only use one discount/promo code per order. This applies to our free delivery codes too.\n
+Discount/promo codes cannot be used for gift vouchers or for any delivery charges.
+As our discount/promo codes vary so do the terms and conditions of each, so make sure you check when you receive any codes. Codes may only be valid for certain items and the majority of codes will have an expiry date. You should be able to find the terms and conditions in the same place you found the code whether it be through an email or on our website. Check out our [Ts&Cs](http://www.asos.com/infopages/pgetandc.aspx) for more information.
+Some codes will only work for specific people or for specific countries. The terms and conditions will state if the code can only be used in a certain country. If you've received the code in an email from ASOS then the code may also be locked to that email address. Make sure you're trying to use the code using your ASOS account that has the same email address as we sent the code to. \n
+If your discount code is still not working after checking all of the above, then please get in touch with our Customer Care Team so we can help you further."
+ 
+  utter_faq/next_day_delivery:
+  - text: "Place an order before 22:00 (Monday- Sunday) to receive it on our Next-Day Delivery option. Next-Day Delivery costs just £5.95."
+ 
+  utter_faq/account_sign_in:
+  - text: "You must sign into your account before you can shop with us or if you want to see or track your orders. If you receive a message that says your email address/password isn't recognised, there's a few things worth checking: \n
+    - Make sure you are using the same email address and password you registered with. \n
+    - If you can't remember your password click on the 'forgotten password' link on the sign in page. You'll be prompted to enter your email address and we'll send you an email with a link that will allow you to create a new password for your account. \n
+    - If you enter your email address and/or password incorrectly three times, your account will be locked for 30 minutes. \n
+\n
+If your issue isn't password related, here are a few things you may want to check; \n
+    - Make sure that the 'Block all cookies' function is disabled on your browser's settings \n
+    - Check that Javascript is enabled on your browser's settings. \n
+    - Make sure that you don't have any content blockers installed. \n
+    - Make sure that your device clock is accurate. For security reasons, if your device clock is fast, you won't be able to access your account. You can resolve this problem easily by setting the time on your device to default. \n
+\n
+If after this you still can't sign in, contact our Customer Care Team giving as much detail as you can about the issue, including screenshots of any error message you get and what you've done so far to try to resolve it."
+ 
+  utter_faq/missing_order:
+  - text: "If your order hasn't been delivered yet, here's what you could do: \n
+    1. Check the estimated delivery date \n
+You’ll find this date in your Order Confirmation email and in 'My Orders’ in My Account. \n
+Please remember that this date is an estimate, so your order may arrive slightly before, on, or slightly after your estimated delivery date. To see the progress of your order, check your tracking. \n
+\n
+    2. Track your order \n
+All you need to do is log into My Account and select the order you want to track. \n
+Click the ‘Track Order’ button to follow your parcel.\n
+\n
+    3. I'm still waiting for my order \n
+Waited until your estimated delivery date? Please allow an extra few days for your order to be delivered (especially during busy times) - our carriers are always doing their best to get your order to you. Make sure you keep an eye on your tracking link for the latest updates. \n
+If your order doesn’t arrive, please let us know within 30 days of the date which your order should have been delivered and we’ll do our best to help you."
+ 
+  utter_faq/missing_item:
+  - text: "We're sorry there's an item missing from your order. Before contacting our Customer Care team, we recommend checking the following: \n
+    - We may have sent your items in separate parcels so please check your emails to see if any of your items will be arriving separately. \n
+    - You can also check if your order has been split into more than one parcel by logging into 'My Account' and checking my orders. \n
+    - The item/s you ordered may have been out of stock. It's worth checking your emails (including your junk/spam) to see if we've sent you an email about this. \n
+    - If you’ve placed multiple orders within a few days of each other that qualify for free delivery and are being shipped to the same delivery address, your orders may be have been combined and split across multiple parcels. You’ll be able to see whether they’ve been shipped together if the tracking information for each of the orders you’ve placed is the same.\n
+\n    
+If you have an item missing from your order, please let us know within 30 days of of your order being delivered and we’ll do our best to help you."
+ 
+  utter_faq/change_password:
+  - text: "If you can't remember your password click on the 'forgotten password' link on the sign in page. You'll be prompted to enter your email address and we'll send you an email with a link that will allow you to create a new password for your account. \n
+If you enter your email address and/or password incorrectly three times, your account will be locked for 30 minutes."
+ 
+  utter_faq/faulty_item:
+  - text: "We’re really sorry if you’ve received a faulty item. \n
+Please return the item to us as soon as possible so we can get this sorted for you. Don’t forget to select ‘Faulty’ as your reason for return. For more information on how to return, [click here](https://www.asos.com/payments-and-deliveries/returns/). If you’re not able to create a return, please get in touch with Customer Care. \n
+Worn your favourite item one too many times? Please bear in mind that all items are inspected on return, and those with wear and tear rather than a fault may not be refunded in full. \n
+Please note - we’re not able to send replacements for faulty items."
+ 
+  utter_faq/wrong_item_received:
+  - text: "We want to sort out any issues with incorrect items straight away. \n
+If one of the items you received isn't what you ordered, please send it back to us and we'll refund you if it's incorrect. \n
+To create your return, simply log into My Account, click Create Return next to the order you’re looking to send back to us and follow the instructions provided. Don’t forget to select Incorrect item received as your reason for return. \n
+Do keep hold of your proof of postage in case we need to look at it later on.  \n
+If you choose to return through another method, it's your responsibility to pay for your return. If you still want the order and they're still in stock, please order them through our website as normal.  \n
+The easiest way to do this is to log into My Account, view your original order, and then add the items to your shopping bag."
+ 
+  utter_faq/student_discount:
+  - text: "We're currently offering a 10% discount to all students in the UK with an ASOS account. \n
+You can get a 10% student discount code through one of the following: \n
+    - Validate your student email address [here](http://www.asos.com/discover/students/asos-on-campus/student-validation/?WT.oss=student). \n
+    - UNiDAYS members can enter their unique code into the Promo code or student code box at the checkout. \n
+    - TOTUM (formerly NUS extra) or Apprentice extra members can enter their unique code into the Promo code or student code box at checkout. NUS Extra and TOTUM card numbers are no longer accepted online. Click here to get your 10% discount code with TOTUM and find out how the student discount offer works at ASOS. Apprentice extra members can find more information [here](https://www.apprenticeextra.co.uk/discounts/10-off-at-asos.aspx)."
+ 
+  utter_faq/missing_comms:
+  - text: "Try to follow the steps below: \n
+    1) Check your junk mail: your email software may be marking our emails as junk mail. To stop this from happening, please add asos@fashion.asos.com to your email address book. \n
+    2) Check your notifications are switched on: if you're shopping on the App, it's worth checking to see if you're opted into receiving push notifications from us. \n To do this, simply go to 'My Account' and select 'Notifications'. Once there, you'll be able to opt into receiving stock notifications, delivery updates and exclusive discount codes straight to your phone. \n
+    3) Check your email address: make sure you typed in the correct email address when you signed up with us. Just sign in to your account (if you can remember which email address you used) to check this. \n
+    4)  Contact us: if after this you're still having trouble, contact our Customer Care Team giving as much detail as you can about the issue and we will try our best to help."
+ 
+  utter_faq/payment_card_refund:
+  - text: "Your refund will still go back onto the card details used on your order as long as the card account is still open. \n
+When a card is lost, stolen or cancelled, we can still refund that card. We cannot refund your order to a different card."
+ 
+  utter_faq/animal_welfare:
+  - text: "The ASOS Animal Welfare Policy applies to all products sold through any of ASOS's websites, including ASOS Brands, Brands, Outlet and Marketplace traders. \n
+Suppliers must not use the following animal derived materials: \n
+    - any part of vulnerable, endangered, exotic or wild-caught species \n
+    - fur, including Mongolian lambs' fur or rabbit hair (including angora)
+feather and down \n
+    - bone, horn, shell (including mother of pearl) and teeth \n
+    - mohair and cashmere \n
+    - silk \n
+    - Alpaca \n
+In addition, they must: \n
+    - Only source certain types of leather, wool and other animal hair as a by-product of the meat industry from suppliers with good animal husbandry. \n
+Cosmetics: \n
+    - In accordance with the EU animal testing ban that came into effect on 11th March 2013, brands selling cosmetic products in the EU through any of ASOS' websites must comply with the requirements of EU law. \n
+    - Some beauty brands sold through ASOS.com, who also sell their products through other channels, may still be testing on animals if required by local market regulations. ASOS is committed to working with the industry to achieve a worldwide ban on animal testing."
+ 
+  utter_faq/returns_policy:
+  - text: "We get it, sometimes something just doesn't work for you and you want your money back. As long as an item is still in its original condition, we accept returns for free, subject to the rules below, which includes rules about fair use. None of these rules affect your statutory rights. \n
+If you return an item requesting a refund within 28 days of the item being delivered to you or available for collection, we'll give you a full refund by way of the original payment method.  \n
+We aim to refund you within 14 days of receiving the returned item.  \n
+If you request a refund for an item during the above timeframes but you can't return it to us for some reason, please get in touch - but any refund will be at our discretion.  \n
+After that? \n
+We don't accept returns for unwanted items after the relevant returns period above. If you try to make a return, we may have to send it back to your default delivery address and ask you to cover the delivery costs.  \n
+Original Condition  \n
+\n
+Hygiene and our customers’ safety is super important, so certain items can’t be returned for refunds including: \n
+    - Face + Body products if opened, used or protective seal is not intact \n
+    - Underwear if the hygiene seal is not intact or any labels have been broken \n
+    - Swimwear if the hygiene seal is not intact or any labels have been broken \n
+    - Pierced jewellery if the seal has been tampered with or is broken."
+ 
+  utter_faq/size_guide:
+  - text: " Just click on the Size Guide button on each product page or check out our Women's and Men's size guides for measurements, fitting tips, washing tips - everything to make sure it fits perfectly and stays looking great. \n
+If the size guide isn't available on the product page, it's because some brands' sizing differs slightly to ours. [Click here](https://www.asos.com/discover/size-charts/?WT.oss=size+guide) to view our basic size guide.  \n
+The option to view the size guide will vary depending on what device you're using.  \n
+You'll also see our Fit Assistant on some product pages - keep an eye out for the blue circle near the Size drop down. Our Fit Assistant will ask for information such as your height, age and weight to help you choose the right size when you order, and will also look at your order history. When you're logged in, you'll then see a size recommendation on some product pages, best matched to the information you've provided."
+ 
+  utter_faq/marketplace_app:
+  - text: "We're sorry, we don't currently have an App for Marketplace. You can still access Marketplace through our desktop site."
+ 
+  utter_faq/stock:
+  - text: "If you have an item in your saved items list, you can choose to be notified if the item comes back in stock, when using the ASOS app. \n
+If you're shopping on our desktop or mobile site, head over to our Back in Stock pages for all the latest additions.  \n
+[Men's Back in Stock](https://www.asos.com/men/new-in-back-in-stock/cat/?cid=17010&nlid=mw|new+in|new+products)  \n
+[Women's Back in Stock](https://www.asos.com/women/new-in-back-in-stock/cat/?cid=17204&nlid=ww|new+in|new+products)"
+ 
+  utter_faq/delivery_international:
+  - text: "We want to make sure you have all of the delivery information you'll need when placing an order with us. \n
+Customers from the Faroe Islands will need to use our European website when shopping with us. Don't forget to select 'Faroe Islands' as your 'Delivery Country' when you get to checkout.
+\n
+    - What delivery methods are available? \n
+We offer Standard, Express and Next-Day delivery services to most European countries.
+Once you've entered your delivery address, you'll be able to see the delivery services available.
+Most of our delivery service are trackable. You'll receive a shipping confirmation email with a tracking link once your order has left the warehouse.
+[Click here](https://www.asos.com/customer-care/delivery/can-i-have-my-order-delivered-to-a-po-box-address/) for more information on delivery to a PO Box.
+If you’ve placed multiple orders on the same day using the same delivery method, your orders may be shipped in one parcel. If the tracking link in your shipping confirmation emails is the same, your orders have been sent with one of our delivery partners and will be arriving at the same time. You’ll be refunded for any additional delivery charges, you’ve paid for if we have combined your orders. \n
+\n
+ 
+    - How much does it cost? \n
+Shipping costs are calculated automatically at the checkout page when both the destination and delivery service are selected.
+[Click here](https://www.asos.com/customer-service/delivery/) for more information on our international delivery times and costs. \n
+\n
+ 
+    - Will I be charged customs? \n
+Delivery to EU mainland addresses aren't subject to customs or import charges, but each territory works differently.
+Find out more on customs charges [here](https://www.asos.com/customer-care/delivery/will-my-parcel-be-charged-customs-and-import-charges/). \n
+\n
+ 
+    - What happens on the day of the delivery? \n
+Our delivery partners operate during normal business working hours.
+A signature may be required, so we suggest your order is delivered to an address where someone will be available to accept it.
+Your order will be sent out with our most suitable delivery partner and will depend on size and weight.
+Once your order has arrived in your country, it will be passed on to an internal postal service, according to standard delivery procedures.
+If you're not in when your parcel arrives, our delivery partner will leave a card telling you where it is. It might be left in a safe place or there will be details on how to pick up your order or rearrange delivery.
+Please be advised that on any public holiday dates in your country, deliveries will not be made. In this instance, please expect your order to arrive the next business day."
+ 
+  utter_faq/delivery_UK_standard:
+  - text: "At just £4.00, our Standard Delivery service gives customers quick and efficient delivery that doesn't break the bank - and if you're spending over £35.00, delivery is FREE! \n
+\n
+    - The Basics \n
+Delivery is within 3 working days of your order being placed.
+Delivery is Monday to Friday and Sunday (excluding Public Holidays).
+BFPO delivery is available on Standard Delivery. Click here for more info on deliveries to BFPO addresses.
+Click & Collect delivery is also available on Standard Delivery. Click here for more about out Click & Collect services. \n
+\n
+    - Tracking \n
+Delivery is fully trackable - we'll email you a link to your tracking information once your parcel has left the warehouse. You can also track your order through My Account. \n
+Placed multiple orders within a few days of each other that qualify for free delivery and are being shipped to the same delivery address? Your orders may be sent in one parcel. You’ll be able to see whether they’ve been shipped together if the tracking information for each of the orders you’ve placed is the same. \n
+\n
+    - What happens on the day of delivery? \n
+Orders being sent to the following postcodes might be delivered by an electric delivery van: E1-E3, EC1-4, SE1, SE11, SW1, W1, WC1, WC2, E8, E9, E14, N1 and NW1. \n
+A signature may be required on receipt. \n
+You may be presented with additional delivery features - check your tracking to see what options are available to you. \n
+If you're not available to take delivery of your parcel, our delivery partner will leave a calling card advising if your parcel has been delivered to a safe location, left with a neighbour or how to arrange collection. \n
+\n
+[Click here](https://www.asos.com/customer-care/delivery/how-does-your-uk-next-day-delivery-service-work/) to find out more about our UK Next Day Delivery service."
+ 
+  utter_faq/carbon_emissions:
+  - text: "We split our delivery emissions into three main sections: travel from our suppliers to our fulfilment centre; delivery from our fulfilment centre to our customers; and finally, returns from our customers back to us. Together, these three sections account for around 90% of our operational emissions, and all of the emissions associated with our deliveries. We’re working hard to reduce our impact in this area, including by scaling up our use of electric vehicles – read more here. \n
+\n
+What is ASOS doing about its carbon footprint? \n
+In 2015 we launched our ‘Carbon 2020’ strategy, which outlined how we planned to reduce carbon intensity – grams of carbon dioxide per customer order – every year until 2020. Carbon 2020 focussed on six key areas: reducing emissions relating to our customer deliveries and returns; order packaging; energy efficiency; reducing energy consumption; and switching to renewable energy sources. Carbon 2020 came to a close this year, and we’re incredibly proud to have achieved a 30% reduction in carbon intensity per customer order since 2015. \n
+Since 2012, we’ve also been part of the UK’s Sustainable Clothing Action Plan, helping us keep track of the waste, water and carbon associated with the production of clothing that we sold in the UK. As a signatory to the programme, we pledged to cut 15% of our water and carbon use and 3.5% of our waste generation by 2021, against a 2012 baseline. We’ve already made great progress against our targets, with  a 20% reduction in carbon use, thanks to switching our fibres to more sustainable alternatives; a 4% reduction in waste, driven by our increased uptake of recycled fibres; and a 10% reduction in water use, all against a 2012 baseline. \n
+\n
+We’re currently in the process of setting new targets and a new strategy for tackling our carbon footprint, and we’re looking forward to sharing more information on this as soon as we can."
+ 
+  utter_faq/delivery_customs:
+  - text: "In most cases, any customs or import duties are charged once the parcel reaches its destination country. \n
+You may be charged for handling fees and taxes as your order passes through customs. Any charges on a parcel must be paid by the person receiving the parcel (this also applies to retail & wholesale customers). \n
+ASOS has no control over these charges and we can't tell you what the cost would be, as customs policies and import duties vary widely from country to country. \n
+It might be a good idea to contact your local customs office for current charges before you order, so you are not surprised by charges you were not expecting."
+ 
+  utter_faq/order_amend:
+  - text: "We're really quick at packing your order up which means we can't make any changes once you've placed it. This includes changing the delivery option, delivery address or payment method. \n
+ 
+However, you may be able to cancel your order and place a new one instead. There are varying time limits in which you can cancel your order depending on what delivery option you've chosen: \n
+    - Next-Day Delivery, Evening-Next Day Delivery and ASOS Instant –  15 minutes after completing your order. \n
+    - Precise Delivery – up to 2 days before your chosen delivery date. \n
+    - Standard Delivery –  60 minutes after completing your order. \n
+\n
+To cancel your order, just follow these steps: \n
+    - 1.  Log into My Account and view your recent orders. \n
+    - 2. Click on the Cancel/View button next to your order. \n
+\n
+If the cancel option is not available, then it is too late to cancel the order. However, you can return any unwanted items for a refund once you've received your order.  \n
+For more information on returning an order to us, [click here](https://www.asos.com/customer-care/returns-refunds/how-do-i-return-something-to-you-from-the-uk/)."
+ 
+  utter_faq/payment_secure:
+  - text: "We use one of the most secure online ordering systems on the market, and are constantly researching and improving our software to make sure we offer the highest possible security at all times Also, we are a senate member of IMRG, the leading industry body for global online retailing, which promotes the highest possible industry standards and best practices, to ensure honest and truthful online transactions. \n
+We utilise industry-standard Secure Sockets Layer (SSL) technology to allow for the encryption of potentially sensitive information such as your name, address and other critically sensitive information like your credit card details. Information passed between your computer and our website cannot be read in the event someone else intercepts it. This technology includes the following features: \n
+     - Authentication - this assures your browser that your data is being sent to the correct computer server, and that the server is secure. \n
+     - Encryption - this encodes the data, so that it cannot be read by anyone other than the secure server.
+Data Integrity - this checks the data being transferred to ensure it has not been altered. \n
+\n 
+In the unlikely incidence of unauthorised use of your card, you must report the incident immediately to your credit card provider in order to qualify for security protection."
+ 
+  utter_faq/app_currency:
+  - text: "All the currencies we offer are available on the App. \n
+Depending on which country you're choosing to browse the website from, there will be different currencies available for you to select. \n
+\n
+On the iOS App, just tap into your 'My Account' section, and select the setting icon on the top right corner.
+From here, you'll be able to select the country you'd like to browse from and the currency you'd like to shop in. \n
+\n
+For the Android App, you'll need to use the settings panel - you can find this when you open the left-hand menu.
+\n
+Shopping on our desktop website? Click on the flag in the top right corner of the page for a full list of currencies available in your country."
+ 
+session_config:
+ session_expiration_time: 60
+ carry_over_slots_to_new_session: true
+ 
+

@@ -1,0 +1,25 @@
+# https://rasa.com/docs/rasa/tuning-your-model/
+# DOES use pre-trained word embeddings: ConveRT model is trained on English corpus of conversations
+
+language: en
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: ConveRTFeaturizer # contains pre-trained word embeddings
+    model_url: https://github.com/connorbrinton/polyai-models/releases/download/v1.0/model.tar.gz
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 1
+    max_ngram: 4
+  - name: DIETClassifier
+    epochs: 100
+    # constrain_similarities: True
+    # model_confidence: linear_norm
+  - name: EntitySynonymMapper
+  - name: ResponseSelector
+    epochs: 100
+    retrieval_intent: faq   # Added
+    # constrain_similarities: True
+    # model_confidence: linear_norm
+  # - name: FallbackClassifier
+  #   threshold: 0.3
+  #   ambiguity_threshold: 0.1
